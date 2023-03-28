@@ -22,8 +22,10 @@ _Projetos utilizando POO e Manipulação do DOM_
     position relative e position absolute para posicionar o botão em formato de bola e a estrutura dele.
     
     classList.toggle() - o método toggle pertence ao objeto classList de um elemento. Ele irá inserir a classe caso não exista e remover caso exista.
-    
-    
+<p align="center">
+<img src="https://user-images.githubusercontent.com/112887006/228379323-835fdf59-dcbb-4ca8-9168-a93a2d7b87e1.gif" alt="animated" />
+</p>
+
 ### 3 - Alterar o texto de um botão para (play pause)
 
     Conceitos utilizados em CSS e JS: 
