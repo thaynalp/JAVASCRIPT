@@ -21,7 +21,6 @@ _Projetos utilizando POO e Manipulação do DOM_
                          
     position relative e position absolute para posicionar o botão em formato de bola e a estrutura dele.
     
-    
     classList.toggle() - o método toggle pertence ao objeto classList de um elemento. Ele irá inserir a classe caso não exista e remover caso exista.
     
     
