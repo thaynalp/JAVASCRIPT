@@ -32,7 +32,7 @@ _Projetos utilizando POO e Manipulação do DOM_
     
     height e width - com CSS, definir altura e largura mantém o tamanho do botão fixo
     
-### 4 - Gerador de paleta de cores aleatórias  
+### 4 - Gerador de paleta de cores aleatórias hexadecimais   
    
     Conceitos utilizados em CSS e JS: 
     
@@ -42,4 +42,13 @@ _Projetos utilizando POO e Manipulação do DOM_
                     
     Math.floor() -  função usada para arredondar o número passado como parâmetro para seu inteiro mais próximo, levando como base o valor menor.
     
-    chars.length - propriedades que vão pegar o 'comprimento do caracter' desejado
+    length - propriedade que retorna o 'comprimento do caracter'
+    
+    CharAt - retorna o caracter da string, de acordo com o índice passado como parâmetro, exemplo
+                   var str = "HELLO WORLD";
+                   var res = str.charAt(0);  resultado de res é: H
+                   
+   loop for - é um código que vai ser repetindo até que uma determinada condição seja alcançada
+                   for (inicilização; condição; incremento) {
+                   // código que será repetido
+                   }
