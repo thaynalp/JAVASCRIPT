@@ -44,6 +44,6 @@ _Projetos utilizando POO e Manipulação do DOM_
     
     length - propriedade que retorna o 'comprimento do caracter'
     
-    charAt - retorna o caracter da string, de acordo com o índice passado como parâmetro, exemplo var str = "HELLO WORLD"; var res = str.charAt(0); resultado é: H
+    charAt - retorna o caracter da string, de acordo com o índice passado como parâmetro, exemplo "HELLO".charAt(0); resultado é: H
              isso tudo é para devolver um nº aleatório inteiro -> charAt(Math.floor(Math.random() * chars.length))
-    loop for - é um código que vai ser repetindo até que uma determinada condição seja alcançada. 
+    loop for - é um código que vai ser repetido até que uma determinada condição seja alcançada. 
