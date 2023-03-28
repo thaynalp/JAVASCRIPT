@@ -35,3 +35,11 @@ _Projetos utilizando POO e Manipulação do DOM_
 ### 4 - Gerador de paleta de cores aleatórias  
    
     Conceitos utilizados em CSS e JS: 
+    
+    Math.random() - função usada para retornar um nº aleatório de ponto flutuante (nºs reais) entre 0 e 1 (ex: 0.8244415641011535).
+                    Este nº aleatório pode ser escalado de acordo com o intervalo desejado, multiplicando o nº de ponto flutuante pelo nº máximo que queremos gerar.
+                    Imagine que você precise de um nº aleatório entre 0 e 20, isso é possível através da fórmula Math.random() * 21.
+                    
+    Math.floor() -  função usada para arredondar o número passado como parâmetro para seu inteiro mais próximo, levando como base o valor menor.
+    
+    chars.length - propriedades que vão pegar o 'comprimento do caracter' desejado
