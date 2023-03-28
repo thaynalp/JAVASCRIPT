@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <a href="https://wallacemaxters.com.br/blog/48/como-gerar-cores-aleatorias-no-javascript">COMO GERAR CORES ALEATÓRIAS NO JAVASCRIPT?</a>
+
+    <p>
+        código para gerar cores hexadecimais aleatórias
+<br>      '#' + Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, '0');
+<br>        let str = '#';
+<br>        while (str.length < 7) { str +=Math.floor(Math.random() * 0x10).toString(16); }
+<br>        Breve explicação da expressão acima:
+<br>        1 - A função Math.floor arredonda o número para baixo, de modo a remover a parte decimal do número gerado pela função Math.random.
+<br>        2 -  O método Number.prototype.toString(16) converte o número em string em sua representação hexadecimal.
+<br>        3 - O método String.prototype.padStart(6, '0') garante que a string hexadecimal tenha sempre seis dígitos.
+    </p>
+
+</body>
+</html>

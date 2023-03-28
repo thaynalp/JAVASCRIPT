@@ -15,7 +15,7 @@ function geraCores(){
 document.getElementById('btn-action').addEventListener('click',()=>{
 
     for(let i=0; i < 5; i++){
-        let color = geraCores() //variável que recebe o retorna da função
+        let color = geraCores() //variável que recebe o retorno da função
         let div_color = document.getElementById(`color-${i+1}`) //essa variável vai receber as divs 1,2,3,4,5 e para iniciar do 1 {i+1}
         // div_color.style.backgroundColor='red' para receber cores aleatórias, vamos mudar o valor 'red' para a função 'geraCores'
         div_color.style.backgroundColor = color
@@ -25,33 +25,22 @@ document.getElementById('btn-action').addEventListener('click',()=>{
     }
 })
 
-/*
-Explicando código: 2ª função
-
-1- vamos chamar o botão com a função de click
-2- vamos colocar um iterador para percorrer as divs de 1a5
-3- chamar as divs pelo id color-${i+1}. a medida que vai iterando vai trocando a div 1,2,3,4,5
-4- vamos mudar o estilo das divs para um background de cores aleatórias. Essas cores são da 1ª função que gera cores aleatórias
-
-5- vamos chamar o text-color das cores pelo id color-${i+1}, fazendo assim a iteração dinâmica
-6- e text-color vai receber tdo o retorno da função de cores aleatórias
-
-*/
-
-
-
-
 
 
 /*
 Explicando código:  função que gera as cores hexadecimais
 
-1- a cada icremento do laço 'for', a variável 'color' vai receber um valor aleatório da variável 'chars' 
+1- a cada incremento do laço 'for', a variável 'color' vai receber um valor aleatório da variável 'chars' 
     e compor o código hexadecimal de uma cor
 
-    CharAt (retorna o índice da string), exemplo
+    CharAt (retorna o caracter da string, de acordo com o índice passado como parâmetro), exemplo
     var str = "HELLO WORLD";
     var res = str.charAt(0);  resultado de res é: H
+
+    charAt() 
+    isso tudo é para devolver um nº aleatório inteiro -> charAt(Math.floor(Math.random() * chars.length))
+
+
    
     Math.floor é usado para arredondar o número passado como um parâmetro para seu inteiro mais próximo
 
@@ -67,4 +56,16 @@ Explicando código:  função que gera as cores hexadecimais
     */
 
 
+    /*
+    Explicando código: 2ª função
+
+    1- vamos chamar o botão com a função de click
+    2- vamos colocar um iterador para percorrer as divs de 1a5
+    3- chamar as divs pelo id color-${i+1}. a medida que vai iterando vai trocando a div 1,2,3,4,5
+    4- vamos mudar o estilo das divs para um background de cores aleatórias. Essas cores são da 1ª função que gera cores aleatórias
+
+    5- vamos chamar o text-color das cores pelo id color-${i+1}, fazendo assim a iteração dinâmica
+    6- e text-color vai receber tdo o retorno da função de cores aleatórias
+
+    */
 

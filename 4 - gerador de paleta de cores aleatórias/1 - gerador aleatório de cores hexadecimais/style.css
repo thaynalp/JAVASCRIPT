@@ -1,5 +1,6 @@
 *{
     margin: 0;
+    overflow: hidden;
 }
 
 .container{
@@ -17,7 +18,11 @@
 
 .btn{
     position: fixed;  /*vai lá pro canto superior esquerdo*/
-    top: 750px;
+    top: 75%;
     left: 47%;
     cursor: pointer;
+}
+a{
+    position: fixed;
+    top: 0%;
 }
