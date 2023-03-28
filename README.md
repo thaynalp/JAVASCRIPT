@@ -31,7 +31,11 @@ _Projetos utilizando POO e Manipulação do DOM_
     textContent - usar textContent em um h2, span ou div retorna o conteúdo textual deles
     
     height e width - com CSS, definir altura e largura mantém o tamanho do botão fixo
-    
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/112887006/228371657-7acb4eeb-5963-4e08-81c9-284380253694.gif" alt="animated" />
+</p>
+
 ### 4 - Gerador de paleta de cores aleatórias hexadecimais   
    
     Conceitos utilizados em JS: 
