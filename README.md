@@ -24,3 +24,11 @@ _Projetos utilizando POO e Manipulação do DOM_
     classList.toggle() - o método toggle pertence ao objeto classList de um elemento. Ele irá inserir a classe caso não exista e remover caso exista.
     
     
+### 3 - Alterar o texto de um botão para (play pause)
+
+    Conceitos utilizados em CSS e JS: 
+    
+    textContent - usar textContent em um h2, span ou div retorna o conteúdo textual deles
+    
+    height e width - com CSS, definir altura e largura mantém o tamanho do botão fixo
+    
