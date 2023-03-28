@@ -32,3 +32,6 @@ _Projetos utilizando POO e Manipulação do DOM_
     
     height e width - com CSS, definir altura e largura mantém o tamanho do botão fixo
     
+### 4 - Gerador de paleta de cores aleatórias  
+   
+    Conceitos utilizados em CSS e JS: 
