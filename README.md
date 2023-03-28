@@ -34,7 +34,7 @@ _Projetos utilizando POO e Manipulação do DOM_
     
 ### 4 - Gerador de paleta de cores aleatórias hexadecimais   
    
-    Conceitos utilizados em CSS e JS: 
+    Conceitos utilizados em JS: 
     
     Math.random() - função usada para retornar um nº aleatório de ponto flutuante (nºs reais) entre 0 e 1 (ex: 0.8244415641011535).
                     Este nº aleatório pode ser escalado de acordo com o intervalo desejado, multiplicando o nº de ponto flutuante pelo nº máximo que queremos gerar.
