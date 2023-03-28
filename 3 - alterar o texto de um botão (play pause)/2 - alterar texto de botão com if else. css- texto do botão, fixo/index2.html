@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alterar o texto de um botão</title>
+</head>
+<body>
+    
+    <p>
+        Desafio: O tamanho do botão deve ser fixo.
+        Ao mudar o texto, o tamanho do botão não deve ser alterado &#10003;
+    </p>
+
+    <button id="btn">Play</button>
+
+<script>
+let btn = document.getElementById('btn');
+
+    function trocarTexto() {
+        if (btn.textContent === "Play") {
+            btn.textContent = "Pausa"
+        } else {
+            btn.textContent = "Play"
+        }
+    }
+    btn.addEventListener('click', trocarTexto)
+
+</script>
+
+<style>
+
+    button{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+
+        border: none;
+        border-radius: 5px;
+
+        font-size: 18px;
+        font-weight: bold;
+        background-color: rgba(2, 2, 245, 0.61);
+        color: rgb(202, 236, 232);
+
+        cursor: pointer;
+        height: 50px; /*definir altura e largura para o botão faz com que o tamanho fique fixo*/
+        width: 150px;
+
+    }
+
+
+    p{
+        position: relative;
+        margin-top: 40%;
+        text-align: center;
+    }
+
+</style>
+
+
+</body>
+</html>

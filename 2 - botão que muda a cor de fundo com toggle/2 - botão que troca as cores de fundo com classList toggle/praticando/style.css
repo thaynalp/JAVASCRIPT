@@ -29,14 +29,53 @@
 }
 
 .amarelo{
-    background-color: rgb(243, 243, 28);
+    background-color: rgb(236, 236, 52);
 }
 
 .vermelho{
-    background-color: rgb(250, 29, 29);
+    background-color: rgb(241, 51, 51);
 }
 
 
+.caixaVerdeApareceu{
+    display: block;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 100px;
+    width: 100px;
+    border-style: solid;
+    border-color: rgb(247, 243, 243);
+    background-color: rgb(56, 218, 15);
+}
+
+
+.caixaAmarelaApareceu{
+    display: block;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 100px;
+    width: 100px;
+    border-style: solid;
+    border-color: rgb(247, 243, 243);
+    background-color: rgb(255, 255, 0);
+}
+
+.caixaVermelhaApareceu{
+    display: block;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 100px;
+    width: 100px;
+    border-style: solid;
+    border-color: rgb(247, 243, 243);
+    background-color: rgb(253, 4, 4);
+}
 /*
 position: static | relative | absolute | fixed | sticky
 
