@@ -70,8 +70,7 @@ _Projetos utilizando POO e Manipulação do DOM_
 ### 6 - Contador com funções de aumentar, diminuir e zerar
 
 
-#### **Tem uma versão deste projeto para você interagir!**
-#### **Acesse o link:**
+#### **Clique no link para acessar projeto e interagir!**
 
 <br>
      
