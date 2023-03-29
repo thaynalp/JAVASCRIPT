@@ -2,7 +2,7 @@
 _Projetos utilizando POO e Manipulação do DOM_
  
  
- ### 1 - Trocador de cores. Ao clicar no botão muda a cor do body para a cor configurada
+ ### 1 - Botão que troca cor do body
  
      Conceitos utilizados em JS: 
      
