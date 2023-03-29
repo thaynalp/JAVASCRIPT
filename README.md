@@ -31,7 +31,7 @@ _Projetos utilizando POO e Manipulação do DOM_
 ### 3 - Alterar o texto de um botão para (play/pause)
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/112887006/228371657-7acb4eeb-5963-4e08-81c9-284380253694.gif" alt="animated" />
+<img src="https://user-images.githubusercontent.com/112887006/228676738-d09f12dd-720d-4eb7-aaf5-d18312363f3b.gif" alt="animated" />
 </p>
                
     Conceitos utilizados em CSS e JS: 
