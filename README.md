@@ -62,7 +62,7 @@ _Projetos utilizando POO e Manipulação do DOM_
      
      Conceitos utilizados em JS: 
      
-     addEventListener('input',()=>{}) - Evento de 'input'. Quando o usuário selecionar uma cor no 'input color' será executada uma função.
+     addEventListener('input',()=>{}) - Evento de 'input'. Nesse projeto, quando o usuário selecionar uma cor no 'input color' será executada uma função.
      
     .value - é uma propriedade que serve para capturar o valor recebido por um input. 
      
@@ -80,12 +80,21 @@ _Projetos utilizando POO e Manipulação do DOM_
 
 <div align="center"> <img  height="200" alt="coding-time" src="https://user-images.githubusercontent.com/112887006/228624287-3c2abca3-4d2c-415b-83fa-403f66b3dada.png"></div>
 
-### 7 - Validador de quantidade de caracteres
+### 7 - Validador de quantidade de caracteres `<textarea maxlength="20"></textarea>`
 
-     Conceitos utilizados em JS:
-     
-     
 
+<p align="center">
+<img src="https://user-images.githubusercontent.com/112887006/228642668-e7a1e89c-0897-475f-ac43-0418b4da10d7.gif" alt="animated" />
+</p>
+
+    
+    Conceitos utilizados em HTML e JS:
+    
+    <textarea maxlength="20"></textarea> - 'maxlength' é a propriedade que determina o máximo de strings recebidas no input 'textarea'
+                                            em JS chamamos essa propriedade assim: textarea.maxLength
+                                            e para capturar o quantas strings estão sendo digitadas: textarea.value.length
+     
+    addEventListener('input',()=>{} - o valor do input será recebido e executará uma função a partir daí
 
 
 
