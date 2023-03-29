@@ -80,6 +80,12 @@ _Projetos utilizando POO e Manipulação do DOM_
 
 <div align="center"> <img  height="200" alt="coding-time" src="https://user-images.githubusercontent.com/112887006/228624287-3c2abca3-4d2c-415b-83fa-403f66b3dada.png"></div>
 
+### 7 - Validador de quantidade de caracteres
+
+     Conceitos utilizados em JS:
+     
+     
+
 
 
 
