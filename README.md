@@ -84,7 +84,7 @@ _Projetos utilizando POO e Manipulação do DOM_
 
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/112887006/228642668-e7a1e89c-0897-475f-ac43-0418b4da10d7.gif" alt="animated" />
+<img src="https://user-images.githubusercontent.com/112887006/228646457-0a1bd0d8-7147-492d-8ed1-0da46768f4a8.gif" alt="animated" />
 </p>
 
     
