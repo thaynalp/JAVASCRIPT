@@ -77,13 +77,13 @@ _Projetos utilizando POO e Manipulação do DOM_
 ## <div align="center"> :link: <a href="https://github.com/thaynalp/Contador-em-JS" target="_blank">código do projeto</a></div>
 ## <div align="center"> :link: <a href="https://thaynalp.github.io/Contador-em-JS/" target="_blank">Projeto: contador</a></div>
 
-<div align="center"> <img  height="200" alt="coding-time" src="https://user-images.githubusercontent.com/112887006/228672123-66acb432-f0f2-41d2-815f-a429a39ed174.gif"></div>
+<div align="center"> <img  height="200" alt="coding-time" src="https://user-images.githubusercontent.com/112887006/228672489-db7af0a0-bc5d-4636-b7bb-73f47e2d8f87.png"></div>
 
 ### 7 - Validador de quantidade de caracteres `<textarea maxlength="20"></textarea>`
 
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/112887006/228646457-0a1bd0d8-7147-492d-8ed1-0da46768f4a8.gif" alt="animated" />
+<img src="https://user-images.githubusercontent.com/112887006/228672123-66acb432-f0f2-41d2-815f-a429a39ed174.gif" />
 </p>
 
     
