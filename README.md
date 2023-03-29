@@ -69,12 +69,16 @@ _Projetos utilizando POO e Manipulação do DOM_
      
 ### 6 - Contador com funções de aumentar, diminuir e zerar
 
-     Tem uma versão deste projeto para você testar! 
-     Acesse o link: 
-:link: <a href="https://thaynalp.github.io/Contador-em-JS/" target="_blank">Projeto: contador</a>
-:link: <a href="https://github.com/thaynalp/Contador-em-JS" target="_blank">Projeto e seus códigos</a> 
 
- <img align="left" height="200" alt="coding-time" src="https://user-images.githubusercontent.com/112887006/228624287-3c2abca3-4d2c-415b-83fa-403f66b3dada.png">
+**Tem uma versão deste projeto para você interagir!**
+**Acesse o link:**
+
+<br>
+     
+<div align="center"> :link: <a href="https://thaynalp.github.io/Contador-em-JS/" target="_blank">Projeto: contador</a></div>
+<div align="center"> :link: <a href="https://github.com/thaynalp/Contador-em-JS" target="_blank">Projeto e seus códigos</a></div>
+
+<div align="center"> <img  height="200" alt="coding-time" src="https://user-images.githubusercontent.com/112887006/228624287-3c2abca3-4d2c-415b-83fa-403f66b3dada.png"></div>
 
 
 
