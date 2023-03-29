@@ -55,7 +55,7 @@ _Projetos utilizando POO e Manipulação do DOM_
     loop for - é um código que vai ser repetido até que uma determinada condição seja alcançada. 
     
    
-### 5 - Gerador de cores hexadecimal com <input type="color">
+### 5 - Gerador de cores hexadecimal com `<input type="color">`
      
      Conceitos utilizados em JS: 
      
