@@ -38,7 +38,7 @@ _Projetos utilizando POO e Manipulação do DOM_
   <img src="https://user-images.githubusercontent.com/112887006/228371657-7acb4eeb-5963-4e08-81c9-284380253694.gif" alt="animated" />
 </p>
 
-### 4 - Gerador de paleta de cores aleatórias hexadecimais   
+### 4 - Gerador de paleta de cores hexadecimal aleatória
    
     Conceitos utilizados em JS: 
     
@@ -53,3 +53,15 @@ _Projetos utilizando POO e Manipulação do DOM_
     charAt - retorna o caracter da string, de acordo com o índice passado como parâmetro, exemplo "HELLO".charAt(0); resultado é: H
              isso tudo é para devolver um nº aleatório inteiro -> charAt(Math.floor(Math.random() * chars.length))
     loop for - é um código que vai ser repetido até que uma determinada condição seja alcançada. 
+    
+   
+### 5 - Gerador de cores hexadecimal com <input type="color">
+     
+     Conceitos utilizados em JS: 
+     
+     addEventListener('input',()=>{}) - Evento de 'input'. Quando o usuário selecionar uma cor no 'input color' será executada uma função.
+     
+    .value - é uma propriedade que serve para capturar o valor recebido por um input. 
+     
+     
+     
