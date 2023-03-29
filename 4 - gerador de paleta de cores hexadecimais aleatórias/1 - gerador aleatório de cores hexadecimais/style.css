@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    overflow: hidden;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+}
+
+.colors {
+    display: flex;
+    width: 20%;
+    border: 1px solid black;
+    align-items: center; 
+    justify-content: center;
+}
+
+.btn{
+    position: fixed;  /*vai lá pro canto superior esquerdo*/
+    top: 75%;
+    left: 47%;
+    cursor: pointer;
+}
+a{
+    position: fixed;
+    top: 0%;
+}

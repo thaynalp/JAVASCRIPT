@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>Cor aleatória</button>
+
+    Desafio: Fazer uma aplicação que gere nºs/imagens  aleatórias
+    Desafio: fazer uma aplicação que gere nºs pré determinados de forma aleatória (tipo um dado)
+
+    <script>
+        const button = document.querySelector('button')
+        const body = document.querySelector('body')
+           
+        function corAleatoria (){
+
+            let letras = '0123456789ABCDEF'
+            let cores='#'
+
+            for (let i = 0; i < 6; i++) {
+                cores += letras.charAt(Math.floor(Math.random() * letras.length))
+            }
+            return cores            
+    }
+
+        // function corAleatoria() {
+
+        //         let letras = '0123456789ABCDEF'
+        //         let cores = '#'
+
+        //         for (let i = 0; i < 6; i++) {
+        //             cores = cores + letras[Math.floor(Math.random() * 16)]
+        //         }
+        //         return cores
+        //     }
+
+        button.addEventListener('click',()=>{
+            let funcaoCorAleatoria = corAleatoria()
+            body.style.backgroundColor = funcaoCorAleatoria            
+        })
+
+    //obs:
+    //contador for - vai de 0 a 6 porque uma cor hexadecimal tem 6 números e uma #
+    // (Math.random()*16) - 16 é a qtde de letras, dentro da variável 'letras'.
+
+    // "HELLO".charAt(0);  return H
+    //letras.charAt() - retorna uma letra ou nº aleatório da variável 'letras'
+
+    // Ao multiplicar por 16, estamos dizendo que o valor máximo para o valor seja de 0 a 16
+
+    </script>
+
+    <style>
+
+  
+    </style>
+</body>
+</html>
