@@ -15,7 +15,7 @@ _Projetos utilizando POO e Manipulação do DOM_
 ### 2 - Botão que muda a cor de fundo com método toggle
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/112887006/228379323-835fdf59-dcbb-4ca8-9168-a93a2d7b87e1.gif" alt="animated" />
+<img src="https://user-images.githubusercontent.com/112887006/228675727-c8acd4c6-514e-4248-a684-a9aa2bca4b92.gif" />
 </p>
     
     
