@@ -74,7 +74,10 @@ _Projetos utilizando POO e Manipulação do DOM_
 :link: <a href="https://thaynalp.github.io/Contador-em-JS/" target="_blank">Projeto: contador</a>
 :link: <a href="https://github.com/thaynalp/Contador-em-JS" target="_blank">Projeto e seus códigos</a> 
 
- <img align="left" height="250" alt="coding-time" src="">
+ <img align="left" height="200" alt="coding-time" src="https://user-images.githubusercontent.com/112887006/228624287-3c2abca3-4d2c-415b-83fa-403f66b3dada.png">
+
+
+
 
 
 
