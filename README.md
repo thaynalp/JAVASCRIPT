@@ -14,29 +14,32 @@ _Projetos utilizando POO e Manipulação do DOM_
      
 ### 2 - Botão que muda a cor de fundo com método toggle
 
-    Conceitos utilizados em CSS e JS: 
+<p align="center">
+<img src="https://user-images.githubusercontent.com/112887006/228379323-835fdf59-dcbb-4ca8-9168-a93a2d7b87e1.gif" alt="animated" />
+</p>
     
+    
+    Conceitos utilizados em CSS e JS: 
   
     .ball-move{left: calc(100% - 40%);} - com CSS foi utilizado esse comando, que faz com que a bola do botão se mova, ao clicar. (na pasta ball-move)
                          
     position relative e position absolute para posicionar o botão em formato de bola e a estrutura dele.
     
     classList.toggle() - o método toggle pertence ao objeto classList de um elemento. Ele irá inserir a classe caso não exista e remover caso exista.
-<p align="center">
-<img src="https://user-images.githubusercontent.com/112887006/228379323-835fdf59-dcbb-4ca8-9168-a93a2d7b87e1.gif" alt="animated" />
-</p>
+
 
 ### 3 - Alterar o texto de um botão para (play/pause)
 
+<p align="center">
+<img src="https://user-images.githubusercontent.com/112887006/228371657-7acb4eeb-5963-4e08-81c9-284380253694.gif" alt="animated" />
+</p>
+               
     Conceitos utilizados em CSS e JS: 
     
     textContent - usar textContent em um h2, span ou div retorna o conteúdo textual deles
     
     height e width - com CSS, definir altura e largura mantém o tamanho do botão fixo
 
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/112887006/228371657-7acb4eeb-5963-4e08-81c9-284380253694.gif" alt="animated" />
-</p>
 
 ### 4 - Gerador de paleta de cores hexadecimal aleatória
    
