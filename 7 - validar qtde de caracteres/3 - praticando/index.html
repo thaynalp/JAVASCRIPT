@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validador de qtde de caracteres</title>
+</head>
+<body>
+    
+    <div>
+        <textarea cols="40" rows="3" maxlength="40"></textarea>
+        <p>40</p>
+    </div>
+
+    <script>
+        const input = document.querySelector('textarea')
+        const p = document.querySelector('p')
+
+        input.addEventListener('input',()=>{
+           let maxCaract = input.maxLength
+           let digitando = input.value.length
+           p.innerText = maxCaract - digitando
+
+            console.log(input.value)
+            console.log(input.value.length)
+            console.log(input.maxLength)
+        })
+
+
+        //receber o valor máx e o valor que está sendo digitado.
+        // depois subtrair um do outro
+        //e printar na tela
+        // input.maxLength --> serve para capturar o maxLength que está no input
+    </script>
+
+
+<style>
+
+    body{
+
+        background-color: rgba(188, 126, 207, 0.363);
+    }
+    div{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    textarea{
+        border: solid;
+        font-size: 18px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;        
+    }
+    p{
+        font-weight: bold;
+    }
+
+
+</style>
+</body>
+</html>

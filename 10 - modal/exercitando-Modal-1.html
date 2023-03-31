@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .modal{
+           
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            
+            width: 500px;
+            height: 500px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercitando - Criando modal</h1>
+
+    <button class="abrir">Abrir Modal</button>
+    <div class="modal">
+        <button class="fechar">Fechar</button>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, voluptate saepe est laudantium consequatur quas provident animi harum eligendi, modi vero, in quos illo hic alias quaerat aliquid ducimus eius!
+            Praesentium, ad corporis? Repellendus, inventore? At unde labore alias beatae ab voluptas ipsa dolor quaerat, eum iusto, maxime aliquid, optio modi enim voluptatem architecto facilis nam. Earum sapiente culpa dolor?
+            Veritatis, consequatur? Quia iure earum exercitationem commodi quisquam eum sed molestiae. Soluta quos quasi illum repellat est reiciendis, doloremque nesciunt eligendi quo tenetur voluptatibus molestiae totam, et ipsum, culpa consectetur?
+        </p>
+    </div>
+
+<script>
+
+    const btnAbrir = document.querySelector('.abrir')
+    const btnFechar = document.querySelector('.fechar')
+    const modal = document.querySelector('.modal')
+
+
+    btnAbrir.addEventListener('click',()=>{
+        modal.style.display='block'
+    })
+
+    btnFechar.addEventListener('click',()=>{
+        modal.style.display='none'
+    })
+    
+
+   
+    // function abrirModal (){
+
+    //     btnAbrir.addEventListener('click',()=>{
+    //         modal.style.display='block'
+    //     })
+    // }
+
+    // abrirModal()
+
+
+    // function fecharModal(){
+    //     btnFechar.addEventListener('click',()=>{
+    //         modal.style.display='none'
+    // })
+    // }
+    // fecharModal()
+    
+
+
+
+
+
+
+    //Arrow Function - outra forma de fazer
+    // const abrirModal=()=> {
+
+    //         btnAbrir.addEventListener('click', () => {
+    //             modal.style.display = 'block'
+    //         })
+    //     }
+    //     abrirModal()
+
+</script>
+</body>
+</html>

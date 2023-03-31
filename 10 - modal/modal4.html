@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Modal - toggle, opacity para transição</h1>
+
+
+<br> vamos esconder o modal com:
+<br> opacipty: 0;
+
+<br> porque com a opacidade dá para controlar a transição do elemento fazer efeitos de transição, já com o 'display:none', não dá
+<br>
+<br>
+ 
+<a href="https://www.youtube.com/watch?v=kj6GFACwLYo">youtube, explicação</a>
+
+
+<br>
+
+    <button id="open-modal" class="btnAbrir">Abrir</button>
+    <div id="fade" class="hide"></div> <!--esse fade é o efeito preto na tela. pra desfocar tudo o que estiver atrás do mdoal-->
+                          
+    <div id="modal" class="hide">  <!-- hide = ocultar -->
+        <div class="modal-header">
+            <h2>Título do modal</h2>
+            <button id="close-modal">Fechar</button>
+        </div>
+        <div class="modal-body">
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, repellat mollitia! Voluptate quidem illo amet cumque a, eum voluptates quo non ipsa itaque voluptatem enim officia, sunt doloribus quaerat iste.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, repellat mollitia! Voluptate quidem illo amet cumque a, eum voluptates quo non ipsa itaque voluptatem enim officia, sunt doloribus quaerat iste.
+            </p>
+        </div>
+    </div>
+
+</body>
+
+<script>
+    const openModal = document.querySelector('#open-modal')
+    const closeModal = document.querySelector('#close-modal')
+    const modal = document.querySelector('#modal')
+    const fade = document.querySelector('#fade')
+    
+
+    const toggleModal =()=>{
+        modal.classList.toggle('hide') 
+        fade.classList.toggle('hide')
+    }
+
+    [openModal,closeModal,fade].forEach(el=>{
+        el.addEventListener('click',()=>{toggleModal()})
+    })
+
+
+    // const modalTodos = [openModal,closeModal,fade]
+    // modalTodos.forEach(element=>{
+    //     element.addEventListener('click',()=>{
+    //         toggleModal()
+    //         console.log('teste de click')
+    //     })
+    // })
+    
+/*método toggle: 
+    verifica se na lista de classes existe a classe desejada. 
+    caso nao tenha, ele coloca a classe, caso tenha ele remove
+*/
+
+//classList: 
+//modal vai encontrar a lista de classes dele e
+// vai add um 'esconder', hide
+
+</script>
+
+<style>
+/* pode usar também o 'display none'. Ms com 'opacidade' conseguimos fazer animações no modal*/
+
+    #modal.hide,   /* id modal que tiver a classe hide*/
+    #fade.hide {    /* id fade que tiver a classe hide*/
+        opacity: 0; 
+        pointer-events: none; /*evento de click - não acontecer quando estiver com modal ocultado*/
+    }
+    
+    #modal.hide{
+        top: 0; /*faz parte da transição, começar pelo ponto zero*/
+    }
+
+    #fade, #modal{
+        transition: 0.5s; /*animação para aparecer*/
+        opacity: 1;
+        pointer-events: all; /*indica que o click só pode funcionar quando a opacidade=1(sem tela preta)*/
+    }
+    
+    #fade{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 5;  /*deixa o fade acima de todos os elementos da tela*/
+    }
+    
+    #modal{
+    background-color: beige;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%) ; /*para alinhar no centro do conteúdo*/
+    z-index: 10; /*para ficar na frente até mesmo do fade*/
+    max-width: 90%; /*limitando a largura, e respeita a margem da tela*/
+    padding: 1.2rem;
+    border-radius: 0.5rem;
+    }
+    
+    .modal-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    border-bottom: 1px solid #ccc; /*separar o título do conteúdo:*/
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    }
+    
+    .btnAbrir{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+
+        height: 50px;
+        width: 100px;
+        font-size: 18px;
+    }
+
+    </style>
+</html>

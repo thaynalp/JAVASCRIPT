@@ -1,0 +1,55 @@
+
+body{
+    margin: 0px;
+    font-size: 18px;
+}
+
+
+header{
+    background-color: rgba(150, 150, 219, 0.651);
+    padding: 15px;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.btnAbrir{
+    font-size: 25px;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+.btnFechar{
+    font-size: 20px;
+    color: aliceblue;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 100%;
+   
+    width: 0px;  /*barra lateral e seus links inicialmente escondidos*/
+    overflow: hidden;
+    transition: width 0.3;
+    background-color: rgba(150, 150, 219, 0.651);
+}
+
+nav a{
+    display: block;
+    padding: 20px 100px 20px 40px;
+}
+
+nav a:hover{
+    color:rgb(0, 59, 110);
+    background-color:aliceblue ;
+}
+
+main{
+    padding: 10px;
+    transition: margin-left 0.5s;
+}
