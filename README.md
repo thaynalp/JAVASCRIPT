@@ -1,5 +1,5 @@
 ## <img height="25" src="https://user-images.githubusercontent.com/112887006/228707454-621d0a9b-0de7-42d3-b383-06fe830e87c0.png"/> Projetos em Javascript #1 
-_Projetos utilizando Manipulação do DOM e POO_
+_Mini Projetos utilizando Manipulação do DOM e POO_
  
  
  ### 1 - Botão que troca cor do body
