@@ -11,7 +11,8 @@ _Mini Projetos utilizando Manipulação do DOM e POO_
     
     Conceitos utilizados em CSS e JS: 
     
-    classList.toggle() - o método toggle pertence ao objeto classList de um elemento. Ele irá inserir a classe caso não exista e remover caso exista.
+    classList.toggle() - o método toggle pertence ao objeto classList de um elemento. Ele irá inserir a 
+                         classe caso não exista e remover caso exista.
     
 **outro projeto dentro desta pasta:**
     
