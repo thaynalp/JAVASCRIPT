@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input type="text">
+        <button>Adicionar</button>
+        <ul></ul>
+    </form>
+
+    <a href="https://www.youtube.com/watch?v=fQJ2nezkUEA">youtube, explicação</a>
+    
+    <script>
+        const form = document.querySelector('form')
+        const ul = document.querySelector('ul')
+        
+        
+        form.addEventListener("submit",(e)=>{
+            e.preventDefault()
+
+            const input = document.querySelector('input')
+            const valueInput = input.value
+            input.value = ""
+            if(valueInput == "") return 
+            
+                ul.innerHTML +=  
+                    `<li class="li-add">${valueInput}
+                        <span> 
+                            <button class="btn-x delete">X</button>
+                        </span> 
+                     </li>  ` 
+                      
+            ul.onclick = function(event){
+                if(event.target.classList.contains('delete')){
+                    if(confirm('Deseja deletar esse item?')){
+                       event.target.parentElement.parentElement.remove()
+                    }
+                }
+            }         
+            // confirm('Deseja deletar este item?')
+       })
+
+        // ul.innerHTML = ul.innerHTML + `<li>${valueInput}</li>`
+        //input.value=""  vai resetar o input
+        //if(value == "") return  >>> serve para não permitir valor vazio na lista "se o value for vazio, só retorne"
+    </script>
+
+    <style>
+
+  
+   
+        .li-add{
+            width: 400px;
+            color: rgb(16, 16, 216);
+            display: flex;
+            justify-content:space-between;
+            font-size: larger;
+            padding: 5px 0px 0px 5px;
+
+
+            border: outset;
+            border-width: 1px;
+            background-color: aliceblue;
+        }
+
+        .btn-x{
+            border: none;
+            background-color: transparent;
+            color: red;
+            cursor: pointer;
+            font-size: larger;
+            margin: 0px 8px 0px 0px;
+
+        }
+    </style>
+</body>
+</html>

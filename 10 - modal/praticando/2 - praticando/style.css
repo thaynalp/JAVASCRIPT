@@ -1,5 +1,6 @@
 
 /* pode usar também o 'display none'. Ms com 'opacidade' conseguimos fazer animações no modal*/
+/* fade é a tela preta, que serve para desfocar tudo o que vem atrás do modal*/
 
     #modal.hide,   /* id modal que tiver a classe hide*/
     #fade.hide {    /* id fade que tiver a classe hide*/

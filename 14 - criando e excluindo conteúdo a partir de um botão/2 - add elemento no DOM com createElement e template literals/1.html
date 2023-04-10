@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input type="text">
+        <button>Adicionar</button>
+        <ul></ul>
+    </form>
+
+    <a href="https://www.youtube.com/watch?v=fQJ2nezkUEA">youtube, explicação</a>
+    
+    <script>
+        const form = document.querySelector('form')
+        const ul = document.querySelector('ul')
+        
+        
+        form.addEventListener("submit",(e)=>{
+            e.preventDefault()
+
+            const input = document.querySelector('input')
+            const valueInput = input.value
+            input.value=""  
+            if(valueInput == "") return 
+           
+
+            const li = document.createElement('li')
+            li.setAttribute('class','li-add')
+            li.textContent= valueInput
+            ul.appendChild(li)
+            
+            const button = document.createElement('button')
+            button.setAttribute('class','btn-x')
+            button.innerHTML="x"
+            li.appendChild(button)
+
+            button.addEventListener("click",(e)=>{
+                // confirm('Deseja deletar esse item?')
+                ul.removeChild(li)
+
+               
+            })
+        })
+
+        // ul.addEventListener('click',()=>{
+        //     console.log(e.target)
+        // })
+
+          // form.onsubmit = function(event){
+        //     alert('oi')
+
+        // }
+        
+    </script>
+
+    <style>
+
+        .li-add{
+            /* position: absolute; */
+            width: 400px;
+            color: rgb(16, 16, 216);
+            display: flex;
+            justify-content:space-between;
+            font-size: larger;
+            padding: 5px 0px 0px 5px;
+
+
+            border: outset;
+            border-width: 1px;
+            background-color: aliceblue;
+        }
+
+        .btn-x{
+            /* position: relative;
+            left: 0%; */
+
+            border: none;
+            background-color: transparent;
+            color: red;
+            cursor: pointer;
+            font-size: larger;
+            margin: 0px 8px 0px 0px;
+
+        }
+    </style>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+    <script>
+        const body = document.querySelector('body')
+        const cursos=['HTML','CSS','Node','Javascript','React','MySQL','ReactNative']
+
+        cursos.map((curso,chave)=>{
+            const div = document.createElement('div')
+            div.setAttribute('class','curso'+chave)
+            div.innerHTML=curso
+            body.appendChild(div)
+            
+            const btn_lixeira = document.createElement("img")
+            btn_lixeira.setAttribute('src','/img/icone-lixeira.png')
+            btn_lixeira.setAttribute('class','btn_lixeira')
+            div.appendChild(btn_lixeira)
+
+            btn_lixeira.addEventListener("click",(e)=>{
+                div.remove(e.target.parentNode)
+                console.log(e.target.parentNode)
+            })
+        })
+        
+    </script>
+<style>
+
+        body{
+            background-color: antiquewhite;
+        }
+
+        div{
+            position: relative;
+            top: 200px;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            padding: 7px;
+            margin-bottom: 10px;
+            font-size: 20px;
+           
+            border: outset;
+            border-width: 1px;
+            box-shadow: rgba(0,0,0,.5);
+            background-color: aliceblue;
+            max-width: 40%;
+        }
+
+        div:hover{
+            background-color: rgb(201, 235, 223);
+        }
+
+        .btn_lixeira{
+           
+            position: absolute;
+            left: 85%;
+            cursor: pointer;
+            width: 40px;
+        }
+</style>
+</body>
+</html>

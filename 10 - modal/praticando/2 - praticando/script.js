@@ -4,24 +4,32 @@
     const fade = document.querySelector('#fade')
     
 
-    const toggleModal =()=>{
-        modal.classList.toggle('hide') 
-        fade.classList.toggle('hide')
-    }
+    // const toggleModal =()=>{
+    //     modal.classList.toggle('hide') 
+    //     fade.classList.toggle('hide')
+    // }
 
-    [openModal,closeModal,fade].forEach(el=>{
-        el.addEventListener('click',()=>{toggleModal()})
+    // [openModal,closeModal,fade].forEach(el=>{
+    //     el.addEventListener('click',()=>{toggleModal()})
+    // })
+    
+
+     [modal,fade].forEach(el=>{
+            el.addEventListener('scroll',()=>{
+            
+            if(window.pageYOffset > 800){
+            modal.classList.toggle('hide') 
+            fade.classList.toggle('hide')
+
+           }
+
+        })
     })
 
 
-    // const modalTodos = [openModal,closeModal,fade]
-    // modalTodos.forEach(element=>{
-    //     element.addEventListener('click',()=>{
-    //         toggleModal()
-    //         console.log('teste de click')
-    //     })
-    // })
-    
+
+
+
 /*método toggle: 
     verifica se na lista de classes existe a classe desejada. 
     caso nao tenha, ele coloca a classe, caso tenha ele remove

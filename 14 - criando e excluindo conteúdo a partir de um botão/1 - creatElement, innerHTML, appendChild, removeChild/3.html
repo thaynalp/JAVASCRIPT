@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    adicionar elementos no DOM de forma dinâmica,
+    a partir de dados em um array
+
+    <h3>map(el, chave)=>{}</h3>
+
+    <script>
+        const body = document.querySelector('body')
+
+        const cursos=['HTML','CSS','Node','Javascript','React','MySQL','ReactNative']
+
+        cursos.map((curso,chave)=>{
+            const li = document.createElement('li')
+            li.setAttribute('id',`curso${chave+1}`)
+            li.innerHTML = curso
+            body.appendChild(li)
+        })
+      
+
+    </script>
+</body>
+</html>

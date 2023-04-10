@@ -7,7 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-    <button id="btnAbrir">Abrir modal</button>
     
     <div id="modal" class="modal">
         <button id="btnFechar">X</button>
@@ -80,28 +79,15 @@
     Desafio: modal abrir só quando o cliente atingir 30% da página dando um scroll
             modal abrir só quando o cliente colocar o mouse em cima do botão de fechar a página
     <script>
-        // const btnAbrir = document.getElementById('btnAbrir')
-        const btnFechar = document.getElementById('btnFechar')
-        const modal = document.getElementById('modal')
-       
+ 
 
-        // function abrirModal(){
-        //     modal.setAttribute('class','abrirModal')
-        // }
 
-        function fecharModal(){
-            modal.setAttribute('class','modal')
-        }
+            document.addEventListener('scroll', () => {
 
-        btnFechar.addEventListener('click',(fecharModal))
-        // btnAbrir.addEventListener("click",(abrirModal))
+                console.log(pageYOffset)
 
-        document.addEventListener('scroll', ()=>{
-                if(window.pageYOffset > 500){
-                    modal.classList.toggle('abrirModal')
-                }
             })
-
+        
 
 
 
