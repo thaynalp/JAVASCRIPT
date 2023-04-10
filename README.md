@@ -1,18 +1,8 @@
 ## <img height="25" src="https://user-images.githubusercontent.com/112887006/228707454-621d0a9b-0de7-42d3-b383-06fe830e87c0.png"/> Projetos em Javascript #1 
-_Projetos utilizando POO e Manipulação do DOM_
+_Mini Projetos utilizando Manipulação do DOM e POO_
  
  
- ### 1 - Botão que troca cor do body
- 
-     Conceitos utilizados em JS: 
-     
-     setAttribute() - método que adiciona um novo atributo ou modifica o valor de um atributo existente num elemento específico, elemento de class, por exemplo
- 
-     addEventListener('click',()) - método que escuta um evento, nesse caso, de click e executa uma função
-     
-     
-     
-### 2 - Botão que muda a cor de fundo com método toggle
+ ### 1 - Botão que muda a cor de fundo com método toggle
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/112887006/228675727-c8acd4c6-514e-4248-a684-a9aa2bca4b92.gif" />
@@ -20,12 +10,25 @@ _Projetos utilizando POO e Manipulação do DOM_
     
     
     Conceitos utilizados em CSS e JS: 
-  
-    .ball-move{left: calc(100% - 40%);} - com CSS foi utilizado esse comando, que faz com que a bola do botão se mova, ao clicar. (na pasta ball-move)
+    
+    classList.toggle() - o método toggle pertence ao objeto classList de um elemento. Ele irá inserir a 
+                         classe caso não exista e remover caso exista.
+    
+**outro projeto dentro desta pasta:**
+    
+    .ball-move{left: calc(100% - 40%);} - com CSS foi utilizado esse comando, que faz com que a bola do botão se mova, ao clicar. 
+    (na pasta ball-move)
                          
     position relative e position absolute para posicionar o botão em formato de bola e a estrutura dele.
-    
-    classList.toggle() - o método toggle pertence ao objeto classList de um elemento. Ele irá inserir a classe caso não exista e remover caso exista.
+ 
+ ### 2 - Botão que troca cor do body
+ 
+     Conceitos utilizados em JS: 
+     
+     setAttribute() - método que adiciona um novo atributo ou modifica o valor de um atributo existente num elemento específico, elemento de class, por exemplo
+ 
+     addEventListener('click',()) - método que escuta um evento, nesse caso, de click e executa uma função
+      
 
 
 ### 3 - Alterar o texto de um botão para (play/pause)
