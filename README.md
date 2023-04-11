@@ -1,5 +1,5 @@
-## <img height="25" src="https://user-images.githubusercontent.com/112887006/228707454-621d0a9b-0de7-42d3-b383-06fe830e87c0.png"/> Projetos em Javascript #1 
-_Mini Projetos utilizando Manipulação do DOM e POO_
+## <img height="25" src="https://user-images.githubusercontent.com/112887006/228707454-621d0a9b-0de7-42d3-b383-06fe830e87c0.png"/> Mini Projetos utilizando Manipulação do DOM e POO
+_Projetos em Javascript #1_
  
  
  ### 1 - Botão que muda a cor de fundo com método toggle
@@ -45,6 +45,11 @@ _Mini Projetos utilizando Manipulação do DOM e POO_
 
 
 ### 4 - Gerador de paleta de cores hexadecimal aleatória
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/112887006/231041294-08f8cbca-1649-4fce-b1f2-ca969b70952c.gif" alt="animated" />
+</p>
+
    
     Conceitos utilizados em JS: 
     
