@@ -45,6 +45,11 @@ _Projetos em Javascript #1_
 
 
 ### 4 - Gerador de paleta de cores hexadecimal aleatória
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/112887006/231041294-08f8cbca-1649-4fce-b1f2-ca969b70952c.gif" alt="animated" />
+</p>
+
    
     Conceitos utilizados em JS: 
     
