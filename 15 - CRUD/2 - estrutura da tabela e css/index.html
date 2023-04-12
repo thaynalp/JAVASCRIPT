@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Javascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Minha Loja 1.0</h1>
+    </header>
+
+    <main>
+        
+        <div class="title">
+            <h2>Produtos</h2>
+            <span>Lista de produtos da minha loja</span>
+        </div>
+
+        <div class="card">
+            <div class="lineInput">
+                <label>Produto</label>
+                <input type="text" id="produto" placeholder="nome do produto">
+            </div>
+
+            <div class="lineInput">
+                <label>Valor</label>
+                <input type="text" id="valor" placeholder="valor do produto">
+            </div>
+
+            <button onclick="produto.adicionar()">Adicionar</button>
+            <button onclick="produto.excluir()">Deletar</button>
+        </div>
+           
+        <div class="content">
+            <table>
+                <thead>
+                    <th>ID</th>
+                    <th>Produto</th>
+                    <th>Valor</th>
+                    <th>Ações</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>mesa redonda de madeira</td>
+                        <td>1.200</td>
+                        <td>
+                            <img src="img/editar.png" alt="editar">
+                            <img src="img/deletar.png" alt="deletar">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    
+    </main>
+
+    <!-- 
+        thead - cabeçalho
+        th - título da coluna
+
+        tbody - onde fica o conteúdo da tabela
+        tr - linha
+        td - coluna
+    
+    -->
+
+    <a href="https://www.youtube.com/watch?v=KWwSwuKNq_o&list=PLGwqoftZstLZUQGt3GeLpI-QAZaT8ccVG&index=4">youtube, explicação</a>
+   
+    <a href="/images/myw3schoolsimage.jpg" download> <span>imagem para download</span>
+    <script src="script1.js"></script>
+</body>
+</html>

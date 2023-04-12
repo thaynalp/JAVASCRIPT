@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Javascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Minha Loja 1.0</h1>
+    </header>
+
+    <main>
+        
+        <div class="title">
+            <h2>Produtos</h2>
+            <span>Lista de produtos da minha loja</span>
+        </div>
+
+        <div class="card">
+            <div class="lineInput">
+                <label>Produto</label>
+                <input type="text" id="produto" placeholder="nome do produto">
+            </div>
+
+            <div class="lineInput">
+                <label>Preço</label>
+                <input type="text" id="preco" placeholder="preço do produto">
+            </div>
+
+            <button onclick="produto.salvar()">Salvar</button>
+            <button onclick="produto.cancelar()">Cancelar</button>
+        </div>
+           
+        <div class="content">
+            <table>
+                <thead>
+                    <th>ID</th>
+                    <th>Produto</th>
+                    <th>Valor</th>
+                    <th>Ações</th>
+                </thead>
+                <tbody id="tbody">
+                    <!-- esses dados entrarão de forma dinâmica - js  -->
+                </tbody>
+            </table>
+        </div>
+    
+    </main>
+
+    <!-- 
+        thead - cabeçalho
+        th - título da coluna
+
+        tbody - onde fica o conteúdo da tabela
+        tr - linha da tabela
+        td - coluna da tabela
+    
+    -->
+
+    <a href="https://www.youtube.com/watch?v=KWwSwuKNq_o&list=PLGwqoftZstLZUQGt3GeLpI-QAZaT8ccVG&index=4">youtube, explicação</a>
+   
+    <!-- <a href="/images/myw3schoolsimage.jpg" download> <span>imagem para download</span> -->
+    <script src="script1.js"></script>
+</body>
+</html>
