@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>miniTwitter</title>
+</head>
+<body>
+    <form>
+        <input name="campoCriaPost" placeholder="Digite o seu post">
+        <button type="submit">Postar</button>
+    </form>
+
+    <ul class="listaDePosts"></ul>
+
+    <script>
+
+    //BASE DE DADOS
+    const miniRedeSocial = {
+        usuarios: [
+            {
+                username: 'omariosouto',
+            }
+        ],
+        posts: [
+            {
+                id: 1,
+                owner: 'omariosouto',
+                content: 'Meu primeiro tweet'
+            }
+        ],
+        criaPost(dados) {
+            miniRedeSocial.posts.push({
+                id: miniRedeSocial.posts.length + 1,
+                owner: dados.owner,
+                content: dados.content
+            })
+        }
+    }
+
+    miniRedeSocial.criaPost({ owner: 'thayna', content: 'olá pessoal' })
+    console.log(miniRedeSocial.posts)
+
+
+
+    // Código de Frontend web
+        const meuForm = document.querySelector('form')
+        
+        meuForm.addEventListener('submit',function criaPostController(e){
+            const campoCriaPost = document.querySelector('input[name="campoCriaPost"]')
+            const listaDePosts = document.querySelector('.listaDePosts')
+            e.preventDefault()
+
+            listaDePosts.insertAdjacentHTML('afterbegin',`<li>${campoCriaPost.value}</li>`)
+            campoCriaPost.value = ''
+
+        })
+    </script>
+</body>
+</html>

@@ -14,3 +14,6 @@ function search_animal (){
         }
     }
 }
+
+//A declaração display: none faz com que o elemento HTML não seja renderizado 
+//(assim sendo você não o verá)

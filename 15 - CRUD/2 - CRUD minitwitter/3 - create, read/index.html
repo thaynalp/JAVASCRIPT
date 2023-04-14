@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>miniTwitter</title>
+</head>
+<body>
+    <form>
+        <input name="campoCriaPost" placeholder="Digite o seu post">
+        <button type="submit">Postar</button>
+    </form>
+
+    <ul class="listaDePosts"></ul>
+
+    <script>
+
+    //BASE DE DADOS
+    const miniRedeSocial = {
+        usuarios: [
+            {
+                username: 'omariosouto',
+            }
+        ],
+        posts: [
+            {
+                id: 1,
+                owner: 'omariosouto',
+                content: 'Meu primeiro tweet'
+            }
+        ],
+        criaPost(dados, htmlOnly = false) {
+            if (!htmlOnly) {
+                // cria posts na memória (array/objeto)
+                miniRedeSocial.posts.push({
+                    id: miniRedeSocial.posts.length + 1,
+                    owner: dados.owner,
+                    content: dados.content
+                })
+            }
+            //cria post no HTML
+            const listaDePosts = document.querySelector('.listaDePosts')
+            listaDePosts.insertAdjacentHTML('afterbegin',`<li>${dados.content}</li>`)
+        }
+    }
+
+    console.log(miniRedeSocial.posts)
+
+    /*
+    no criaPost:
+        -agora vai salvar localmente os posts criados
+        -e renderizar no HTML
+
+        -vai executar esse código aqui:  miniRedeSocial.criaPost({ owner: 'thayna', content: 'olá pessoal' })
+
+    */
+
+    /* ATENÇÃO
+        A base de Dados é chamada de 'modelo'
+        porque quando criamos um post, ele é salvo tanto na base de dados,
+        quanto no HTML, o que faz com que o código fique duplicado
+
+        e por isso colocamos o parâmetro 'htmlOnly'
+        "se não for htmlOnly, não crie em memória"
+    */
+
+
+    //CRUD: [READ]
+    miniRedeSocial.posts.forEach(({owner,content})=>{
+        miniRedeSocial.criaPost({owner: owner, content: content}, true)
+    })
+
+    // CRUD: [CREATE]
+        const meuForm = document.querySelector('form')
+        
+        meuForm.addEventListener('submit',function criaPostController(e){
+            const campoCriaPost = document.querySelector('input[name="campoCriaPost"]')
+            e.preventDefault()
+            
+            miniRedeSocial.criaPost({ owner: 'thayna', content: campoCriaPost.value})
+            campoCriaPost.value = ''
+
+        })
+    </script>
+</body>
+</html>
