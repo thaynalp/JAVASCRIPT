@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    https://www.w3resource.com/javascript-exercises/javascript-functions-exercises.php
+  
+    1. Escreva uma função JavaScript que inverta um número. Vá para o editor Exemplo x = 32243; Saída esperada: 34223 Clique em mim para ver a solução
+<script>
+    // function inverterNum (num){
+    //    return (num.toString().split('').reverse().join(''))
+    //    }
+    //revertendo número   
+    function inverterNum (num){
+        return num.toString().split('').reverse().join('')
+    }
+    console.log(inverterNum(3210))
+
+
+
+
+    //revertendo string
+    const palavra = 'Brasil'
+    const palavraRevertida = palavra.split('').reverse().join('')
+    console.log(palavraRevertida) //lisarB
+
+    //numa função
+    function reverter(str){
+        return(str.split('').reverse().join(''))
+    }
+    console.log(reverter('E aí, beleza?!'))
+
+
+</script>
+</body>
+</html>

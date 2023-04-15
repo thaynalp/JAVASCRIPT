@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+resolução: https://acervolima.com/como-gerar-todas-as-combinacoes-de-uma-string-em-javascript/#:~:text=concat()%20e%2C%20ent%C3%A3o%2C%20incrementaremos,de%20vari%C3%A1vel%20de%20%C3%ADndice%20atual.
+
+enunciado da questão: https://www.w3resource.com/javascript-exercises/javascript-functions-exercises.php#EDITOR
+
+inconclusivo. não peguei o entendimento do exercício todo ainda.
+<body>
+    <script>
+        let combinations = (str) => {
+          let tempArr = [];
+          let resultArr = [];
+          for (let i = 0; i < str.length; i++) {
+           console.log(tempArr = [str[i]]) 
+            let index = 0;
+            while (resultArr[index]) {
+              tempArr.push("" + resultArr[index] + str[i]);
+              index++;
+            }
+            resultArr = resultArr.concat(tempArr);
+          }
+          return resultArr;
+        };
+        console.log(combinations("dog"));
+
+        // let combinations = (str) => {
+        //   let tempArr = [];
+        //   let resultArr = [];
+        //   for (let i = 0; i < str.length; i++) {
+        //    console.log(str[i]) 
+        //   }}
+        //   console.log(combinations('dia'))
+
+    /*obs: 
+    1- nesse primeiro momento criamos um iterador para percorrer a string que for passada
+          a medida que o iterador for percorrendo, ele vai mostrando letra por letra, separadamente
+    2- e um com nome: 'array temporário' vai receber, essas string separadas
+
+
+    iterador lê-se:
+    enquanto o iterador for menor que o tamanho da string, continue percorrendo a string toda
+
+    */ 
+
+    let combinations = (str) => {
+          let tempArr = [];
+          let resultArr = [];
+          for (let i = 0; i < str.length; i++) {
+           console.log(tempArr = [str[i]]) 
+            let index = 0;
+            while (resultArr[index]) {
+              tempArr.push("" + resultArr[index] + str[i]);
+              index++;
+            }
+            resultArr = resultArr.concat(tempArr);
+          }
+          return resultArr;
+        };
+
+        </script>
+</body>
+</html>

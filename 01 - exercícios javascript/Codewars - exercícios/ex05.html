@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    resoluções: <a href="">"youtube.com/watch?v=RCw8sZJV7H8"</a> 
+    
+    enunciado:
+    você tem um array de números, retorne a soma de todos os nºs positivos
+
+    exemplo: [1,-4,7,12] => 1 + 7 + 12 =20
+
+    se não tiver nada para somar, a soma é 0
+
+    <script>
+
+
+    function numerosPositivos(arr) {
+        let soma = 0
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] >= 0) {
+                soma = soma + arr[i]
+            }
+        }
+        return soma
+    }
+
+    console.log(numerosPositivos([10,5,-10,5,0,-1]))//20
+     //exmplo: 
+     //começando o loop: se arr[0], nesse caso vale 10
+     //se 10 for maior ou igual a zero
+     //soma, que vale inicialmente como zero; vai ser soma= soma+10
+     //soma entao vai valer 10 e o índice vai para 1, que vale 5.... e assim por diante
+
+        //vamos percorrer as posições do array
+        //verificando se os números são negativos ou positivos
+
+    /*  passo a passo:
+
+        1-declaramos uma variável soma, zerada
+        2-o for vai permitir que o 'indice' percorra o parâmetro da função 
+        3-se o parâmetro da função no 'indice' que ele for percorrendo for maior ou igual a zero
+        4- a variável 'soma' vai ser igual a ela mesma + o parâmetro da função no índice que ele estiver iterando
+
+        
+        
+        
+    */
+
+    </script>
+</body>
+</html>

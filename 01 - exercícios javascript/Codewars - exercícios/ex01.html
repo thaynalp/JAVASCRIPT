@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Retorna o número (contagem) de vogais na string fornecida.
+
+    Consideraremos a, e, i, o, ucomo vogais para este Kata (mas não y).
+
+    A string de entrada consistirá apenas em letras minúsculas e/ou espaços.
+
+<script>
+
+    function contarVogais(str){
+        var vogaisContadas = 0
+        str.split('').forEach(function(i){
+            if(i == "a" | i == "e" | i == "i" | i == "o" | i == "u"){   //oeprador lógico 'ou' |
+                vogaisContadas += 1
+            }
+        })
+        return vogaisContadas
+    }
+    console.log(contarVogais("oi, meu nome é"))
+
+//     function getCount(str) {
+//     var vowelsCount = 0;
+//     str.split("").forEach(function(x){
+//     if(x == "a" | x == "e" | x == "i" | x == "o" | x == "u"){
+//     vowelsCount += 1;
+//     }
+//     });  
+//     return vowelsCount;
+// } 
+// console.log(getCount('ola meu nome é'))
+
+
+//outra forma de fazer:
+
+// function getCount(str) {
+//   let vowels = ['a', 'e', 'i', 'o', 'u'];
+//   var vowelsCount = 0;
+  
+//   // enter your majic here
+//   for (let i of str) {
+//     if (vowels.includes(i)) vowelsCount++;
+//   }
+  
+//   return vowelsCount;
+}
+
+</script>
+</body>
+</html>

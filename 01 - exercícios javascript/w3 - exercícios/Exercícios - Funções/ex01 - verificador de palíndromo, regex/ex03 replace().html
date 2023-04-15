@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>replace('','')</h1>
+    <h2>troca uma parte da expressão, por outra, basta indicar qual troca se quer executar</h2>
+   
+    A função .replace recebe como parâmetros o padrão que estamos procurando 
+    e como segundo parâmetro o que queremos colocar no lugar
+    
+    O método replace() retornará uma nova string com alguma ou todas as 
+    correspondências substituídas por aquilo que sugerirmos. 
+
+    <script>
+        let texto = "javascript é a melhor linguagem de programação"
+        let textoTrocado = texto.replace("javascript","Phyton")
+        document.write(textoTrocado)
+        console.log(textoTrocado)
+
+        // const frase = 'Frase com uma palavra-feia'
+        // frase.replace('palavra-feia', '********') 
+        // console.log(frase) // O retorno seria 'Frase com uma ********')
+   
+        //exemplo com regex
+        let frase = "eu adoro aprender javascript, porque javascript é a melhor linguagem"
+        let textoAtualizado = frase.replace(/javascript/g,"PHP") //o 'g' indica que serão verificados tods as palavras 'javascript' inseridas na variável
+        console.log(textoAtualizado)
+   
+        //exemplo regex case sensitive (maiúsculo ou minúsculo)
+        let x = "JAVAscriPT é tão legal. Javascript é javascript mesmo"
+        let replaceX = x.replace(/javascript/gi,"PHP") //'i' verifica os maiúsclos e minúsculos e torna tudo do jeito que se deseja aplicar
+        console.log(replaceX)
+   </script>
+</body>
+</html>

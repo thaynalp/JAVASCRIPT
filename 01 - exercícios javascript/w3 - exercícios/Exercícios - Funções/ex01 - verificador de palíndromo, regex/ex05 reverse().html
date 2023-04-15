@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>reverse()</h1>
+    <h2>O método reverse() inverte os itens de um array. O primeiro elemento do array se torna o último e o último torna-se o primeiro.</h2>
+
+<script>
+    let num = [1,2,3,4]
+    let strg = ['olá', 'mundo','Brasil']
+    let x = ['Os últimos serão os primeiros']
+
+    console.log(num.reverse()) //[4, 3, 2, 1]
+    console.log(strg.reverse()) //['Brasil', 'mundo', 'olá']
+ 
+ // console.log(x.toString().split(' ',5).reverse().join(' ')) //primeirososserãoúltimosOs
+ 
+ let xy = x.toString().split(' ').reverse().join(' ') 
+ console.log(xy)
+</script>
+</body>
+</html>

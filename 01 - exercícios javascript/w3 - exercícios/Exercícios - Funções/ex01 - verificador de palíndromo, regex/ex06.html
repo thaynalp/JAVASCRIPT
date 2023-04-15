@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>exercitando - verificando se a palavra é um palíndromo</h2>
+    
+    1- criar variável para receber o 'regex' - colocar o padrão de caracteres que desejo receber. retirand então: os espaços, pontos, vírgulas, e nºs... 
+    
+        //criar uma variável para receber esses métodos (o parâmetro da função; toLowerCase(); replace('regex,""'))
+    2- 'toLowerCase()' passar as strings da função para letras minúsculas
+    3- 'replace()' - colocar como parâmetros do replace o 'regex' que quero como padrão, para o parâmetro de string vazia ''
+   
+        //criar variável para receber a variável com as primeiras mudanças
+        // e receber os métodos restantes (split('');reverse();join(''))
+    4- 'split('')' - para transformar as strings num array e colocá-las separadas. Sendo possível percorrer uma por usaremos
+    5- 'reverse()' - para inverter essas palavras de trás para frente... pq no próx passo vamos verificar se as palavras invertidas são iguais a 1ª palav passada
+    5- 'join('') - transforma o array numa string de volta, juntando todos os elementos que foram separados pelo split
+    6 - 'return' compare se a primeira variável com os métodos, é estritamente igual, a segunda variável 
+
+    <script>
+        function palindromo (palavra){
+            let regex = /[\W_]/g
+            let lowReg = palavra.toLowerCase().replace(regex,'')
+            let reverse = lowReg.split('').reverse().join('')
+             return lowReg === reverse  // "ama" === "ama"? => true
+        }
+        console.log(palindromo("ama"))
+    </script>
+
+</body>
+</html>

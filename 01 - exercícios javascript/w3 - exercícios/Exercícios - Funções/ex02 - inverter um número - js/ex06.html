@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Math.sign()</h1>
+    <h2>A Math.sign()função retorna 1 ou -1, indicando o sinal do número passado como argumento. Se a entrada for 0 ou -0, ela será retornada como está.</h2>
+   
+    Multiplicar o número pelo sinal do número original — para manter o valor negativo.
+    num * Math.sign(num) multiplica o número pelo sinal do número original fornecido.
+
+    <script>
+    // original value of     num = -5432100
+    num = 12345
+
+    num * Math.sign(-5432100) // num = -12345
+
+    console.log(num*Math.sign(-5432100))
+
+//-------------------------------------
+
+// console.log(Math.sign(-3));
+// // expected output: -1
+
+// console.log(Math.sign(0));
+// // expected output: 0
+
+// console.log(Math.sign('-3'));
+// // expected output: -1
+
+
+    </script>
+</body>
+</html>

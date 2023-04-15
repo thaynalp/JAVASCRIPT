@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    enunciado e resolução <a href="">https://www.w3resource.com/javascript-exercises/javascript-functions-exercises.php#EDITOR</a>
+
+    enunciado:
+
+    4. Escreva uma função JavaScript que retorne uma string passada com
+     letras em ordem alfabética. 
+     Vá para o editor String de exemplo: 'webmaster' 
+     Saída esperada: 'abeemrstw' Suponha que a pontuação e os símbolos numéricos 
+     não estejam incluídos na string passada. Clique em mim para ver a solução
+
+
+
+     <script>
+        function ordenar(array){
+            return (
+                array.split('').sort().join('')
+            )
+        }
+        console.log(ordenar('paralelepipedo')) //aadeeeillopppr
+
+        //2ª forma de executar
+        function ordem(str) {
+            var arr = str.split(""); 
+            res = arr.sort().join(""); 
+            return res; 
+        }
+        console.log(ordem('paralelepipedo'))
+
+        /*
+        PASSO A PASSO:
+        
+        1- split('') - para separar as strings e torná-las em array
+        2- sort() - para ordenar as letras em ordem crescente
+        3- join('') - para juntar as strings que foram separadas pelo split('')
+
+        */
+     </script>
+</body>
+</html>

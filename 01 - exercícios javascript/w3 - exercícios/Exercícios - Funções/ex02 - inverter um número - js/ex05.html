@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>parseFloat()</h1>
+    var valorStr = '50.5';
+    var parseValorStr = parseFloat(valorStr);
+    typeof valorStr // string
+    typeof parseValorStr // number
+
+    <h2>A função parseFloat analisa um argumento (convertendo-o para uma string primeiro caso necessário) e retorna um número de ponto flutuante (número decimal).</h2>
+    parseFloat(num) converte num em um número de ponto flutuante a partir da string.
+   
+   1 - transformamos o número em decimal
+   2 - nesse processo ele vai perder o sinal de menos e os zeros
+   3 - para recuperar o sinal negativo, original, vamos usar o *math.sign()
+   <script>
+     num = '0012345-'
+     parseFloat(num)  //foi para decimal e tira os zeros a esquerda. OBS: perde o sinal de menos
+    
+    nParsefloat =   parseFloat(num)
+    //ou
+    console.log(parseFloat(num)) 
+
+    console.log(nParsefloat) // num = 12345
+    </script>
+</body>
+</html>

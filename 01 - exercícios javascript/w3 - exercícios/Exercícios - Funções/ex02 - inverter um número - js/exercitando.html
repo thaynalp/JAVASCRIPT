@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>crie uma função que inverta um número</h2>
+
+    Passo a passo:
+
+    <br>    *obs: o parseFloat vem primeiro
+    <br>    1- tranformar de nº para string 'toString()' - para poder usar o split
+    <br>    2- converter a string criada em um array - 'split('')' - para acessar elemento por elemento
+    <br>    3 - inverter a ordem dos números do array  - 'reverse()'
+    <br>    4 - unir o array novamente, e transformá-lo numa string 'join('')'
+    <br>    5 - converter os nºs inteiros em decimais 'parseFloat() -(vai cortar os zeros e o sinal)
+    <br>    6 - multiplicar por '*Math.sign()' - devolve o sinal original perdido no processo anterior
+
+    <script>
+        // const reversedNum = num => parseFloat(num.toString().split('').reverse().join('')) * Math.sign(num)
+        const reverseNum = num => parseFloat(num.toString().split('').reverse().join(''))*Math.sign(num)
+
+        // function reverseNum(num) {
+        //     return (
+        //         parseFloat(num.toString().split('').reverse().join(''))*Math.sign(num)
+        //         )
+        // }
+
+            console.log(reverseNum(-543.21))
+
+            // console.log(reversedNum(23000000))
+
+            // console.log(reversedNum(543.21))
+
+
+    </script>
+</body>
+</html>

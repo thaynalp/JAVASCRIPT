@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>método sort()</h1>
+    <h2>
+        Por padrão, o método sort() classifica os elementos do array em ordem crescente, 
+        com o menor valor primeiro e o maior por último.
+        O método sort() molda os elementos em strings e compara as 
+        trings para determinar as suas ordens.
+    </h2>
+    <a href="">https://ricardo-reis.medium.com/o-m%C3%A9todo-sort-do-array-javascript-482576734e0a</a>
+
+    <script>
+        //ordenando string
+        let animais = ['cat','dog','elefante','abelha','formiga']
+
+        let ordenado = animais.sort() 
+        console.log(ordenado) // ['abelha', 'cat', 'dog', 'elefante', 'formiga']
+
+        //ordenando numeros 
+        let numbers = [0,660,30,5,2,5,100,55,500,60]
+        
+        // numbers.sort((a,b)=>{
+        //     if(a>b) return 1
+        //     if(a<b) return -1
+        //     return 0
+        // })
+
+        numbers.sort((a,b)=> a-b) //versao simplificada
+        console.log(numbers)
+    </script>
+</body>
+</html>

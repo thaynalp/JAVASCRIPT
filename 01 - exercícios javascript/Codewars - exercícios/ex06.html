@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    enunciado:
+    <h1>remova os espaços da string e retorne o resultado</h1>
+
+<br>    podemos fazer isso com um contador for ou com o regex
+<br>    var conteudoSemEspaco = conteudo.replace(/\s+/g,'') - podemos testar essa formula também
+
+    <script>
+        function noSpace(strg) {
+            let novaString = ''
+            for (let i = 0; i < strg.length; i++) {
+                if (strg[i] !== ' ') {
+                    novaString = novaString + strg[i]
+                }
+            }
+            return novaString
+        }
+
+        console.log(noSpace('Esse texto não tem nenhum espaço entre as palavras'))
+
+
+
+        //'novaString' - vamos criar uma variável que vai receber o valor da string sem o espaço 
+        //'for' - vamos colocar um iterador para percorrer a string passada e verificar letra por letra se existe um 'espaço'
+        //'se' se a 'string' passada, no índice zero, inicialmente, for diferente de 'espaço vazio', então...:
+        //'novaString' vai ser somada a ela mesma e somada ao índice que o iterador verificou que é diferente de 'espaço vazio'
+        //e assim o iterador vai percorrendo a frase ou a palavra e vai ignorando os 'espaços vazios' e 'concatenando' as strings válidas 
+
+
+    let conteudo = 'Esse texto não tem nenhum espaço entre as palavras'
+    var conteudoSemEspaco = conteudo.replace(/\s+/g,'')
+    console.log(conteudoSemEspaco)
+    </script>
+</body>
+</html>

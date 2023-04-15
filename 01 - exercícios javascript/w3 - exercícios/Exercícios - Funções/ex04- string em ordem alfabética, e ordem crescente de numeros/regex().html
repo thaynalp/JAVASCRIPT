@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <h1>regex() - removendo espaços</h1>
+    
+
+<br>    removendo espaços com regex
+<br>    var conteudoSemEspaco = conteudo.replace(/\s+/g,'')
+
+<br>    Se coloca para procurar espaços é o \s
+<br>    o + é para se tiver mais de um espaço junto de outro espaço ele "pega" também. 
+<br>    E o g ali é para procurar esse padrão na string inteira.
+<script>
+    
+    let conteudo = 'hoje é um lindo dia de verão'
+    var conteudoSemEspaco = conteudo.replace(/\s+/g,'')
+    console.log(conteudoSemEspaco)
+
+//       function alpha(str) {
+//     var arr = str.split(" ");
+//     res = arr.sort().join("");
+//     rws = res.replace(/\s+/g, "");
+//     return rws;
+//   }
+//   console.log(alpha('vamos ver o que vai acontecer'))
+</script>
+</body>
+</html>

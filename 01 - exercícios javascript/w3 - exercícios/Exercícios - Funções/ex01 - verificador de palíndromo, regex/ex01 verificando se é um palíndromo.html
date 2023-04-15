@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Verificador de Palíndromo com funções integradas</h1>
+    <h2>Para essa solução, usaremos vários métodos: tolowerCase(); replace(); split(); reverse(); join()</h2>
+    
+    Youtube sobre Regex <a href="https://www.youtube.com/watch?v=d2uqo6PhdM4"></a>
+    Site que converte no formato Regex que desejar <a href="https://regex101.com/"></a>
+    link de explicação <a href="https://www.freecodecamp.org/portuguese/news/duas-maneiras-de-conferir-palindromos-em-javascript/#:~:text=function%20palindrome(str)%20%7B%20var%20re%20%3D%20%2F%5B%5EA,if%20(str%5Bi%5D%20!%3D%3D"></a>
+
+    Retorne true se a string fornecida for um palíndromo. Caso contrário, retorne false.
+    Um palíndromo é uma palavra, expressão, número ou outra sequência de caracteres que pode ser lido tanto do começo até o fim, quanto do fim ao começo com o mesmo resultado. A
+
+    <h2>RegExp - Expressões regulares</h2>
+
+    Observação: você precisará remover todos os caracteres não alfanuméricos (pontuação, espaços e símbolos) e transforme tudo na mesma capitalização (letra em minúsculo ou maiúsculo) para verificar se determinada 
+    palavra ou frase é um palíndromo.
+
+    Expressões regulares são padrões usados para corresponder a combinações de caracteres em strings.
+    RegExp (expressões regulares). /[^A-Za-z0–9]/g é a RegExp mais fácil de se utilizar.
+    Para passar no último caso de teste, podemos usar duas expressões regulares:
+
+    /[^A-Za-z0–9]/g  ou
+    /[\W_]/g
+
+    \W corresponde a todos os caracteres que não sejam alfabéticos
+    \W é equivalente a [^A-Za-z0–9_]
+    Também precisamos adicionar a flag g para a pesquisa global.
+<script>
+    function palindrome(str) {
+    var re = /[\W_]/g;
+    var lowRegStr = str.toLowerCase().replace(re, '');
+    var reverseStr = lowRegStr.split('').reverse().join(''); 
+    if (reverseStr === lowRegStr){
+    console.log(true)
+    }
+    else{return console.log(false)} 
+    }
+    palindrome("ama a m a"); //true
+    palindrome("151") //true
+    palindrome("hoje")//false
+</script>
+</body>
+</html>

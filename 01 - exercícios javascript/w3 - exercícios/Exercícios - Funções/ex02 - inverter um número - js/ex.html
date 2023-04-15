@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Como inverter um número em JavaScript</h1>
+
+    Diferenças entre a arrow function e a função regular:
+    Neste exemplo, a única diferença entre a arrow function e a função regular é que a última precisa fornecer um valor de return explícito.
+
+    As arrow functions têm um valor de <strong>return implícito</strong> — se puderem ser escritas em uma linha, sem a necessidade das chaves {}.
+
+
+<script>
+    function reversedNum(num) {
+        return (
+        parseFloat(
+        num
+            .toString()
+            .split('')
+            .reverse()
+            .join('')
+        ) * Math.sign(num)
+  )                 
+}
+
+//ou arrow function
+
+const reversedNum = num => parseFloat(num.toString().split('').reverse().join('')) * Math.sign(num)
+
+</script>
+</body>
+</html>
