@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Evento on click direto na classe ou trabalhado diretamente tudo no JS</h1>
+    <h2>Formas de executar evento de mouse.</h2>
+    <p>
+        Pode ser direto pelo HTML <br>
+        somente pelo Javascript (com intuito de não sujar visualmente o código)
+    </p>
+    <p>
+        1 - Pode ser chamanado as classes, tags ou qualquer elemento que queira trabalhar, pelo getElementBy... ou querySelector <br>
+        2-  depois de atribuir esses elementos a uma varáel, no js, vamos chamar o addEventListener, indicando o evento que vamos trabalhar <br>
+        3 - e o que será executado quando esse evento ocorrer
+    </p>
+    <div id="c1" class="curso c1" onclick="alert('CLICOU! Evento chamado direto pelo html')">HTML</div>
+    <div id="c2" class="curso c1" onclick="msg()">CSS</div>
+     
+    <script src="script-aula34.js"></script>
+</body>
+</html>

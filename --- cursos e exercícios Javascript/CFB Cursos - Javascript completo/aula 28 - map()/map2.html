@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Método map() - transformando HTMLCollection em um array, através do Spread</h1>
+    dessa forma podemos percorrer os elementos com o método map e manipulá-los
+
+    <div>
+        <div>PHP</div>
+        <div>Javascript</div>
+        <div>FrontEnd</div>
+        <div>Backend</div>
+
+    </div>
+    <script>
+        let el = document.querySelector("div")
+        el = [...el]   //'el' vai receber o 'spread', que torna os elementos da div em um 'array'
+        
+        el.map((e,i)=>{
+            document.write(e.innerHTML) //retorna o que tem dentro das divs
+            // document.write(e)
+        })
+        
+   </script>
+</body>
+</html>

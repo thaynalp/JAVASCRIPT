@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Método Filter</title>
+</head>
+<body>
+    <h1>Método filter</h1>
+    <h2>Filtre passa 3 parâmetros (valor, indice, array)</h2>
+    Aqui vamos trabalhar com array <strong>arrow function</strong> diretamente <strong>dentro do filter</strong> 
+    <br> para reduzir o código <br>
+    E vamos <strong>retornar</strong> somente o <strong>valor</strong> do array
+   
+  <script>
+  // método filter pode trabalhar com 3 parâmetros =(valor,indice,arr)=>{}
+        const idades = [15,21,17,2,18,44,12,50,100]
+        const maior = idades.filter((val)=>{  //só quero que retorne o valor, por isso só coloquei isso no parâmetro
+            if(val >= 18)
+            return val
+        }) 
+
+        const menor = idades.filter((val)=>{
+            if (val < 18)
+            return val
+        })
+
+        console.log(idades)
+        console.log(maior)
+        console.log(menor)
+    //nessa fnção vou retornar a idade que for maior de 18
+    </script>
+</body>
+</html>

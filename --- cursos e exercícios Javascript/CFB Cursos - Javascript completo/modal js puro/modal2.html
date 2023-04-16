@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        dialog::backdrop{
+            background-color: rgb(0 0 0 / .5);
+        }
+
+        dialog{
+            border: none;
+            border-radius: .5rem;
+            box-shadow: 0 0 1em rgb(0 0 0 / .3);
+            width: 80%;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Usando Showmodal - para abrir modal</h1>
+
+    Mayk Brito - Modal (popup) FACINHO<a href="">https://www.youtube.com/watch?v=hg66uftLsTQ</a>
+
+    <button>Abrir Modal</button>
+    <dialog class="modal">
+        <button>Fechar</button>
+        <h2>título</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat aut, officiis corporis, magnam aspernatur
+            facilis minima libero, doloribus excepturi ut quia debitis? Reprehenderit deserunt blanditiis eum nostrum sed
+            quidem ratione!
+            Explicabo earum labore omnis obcaecati. Omnis numquam mollitia impedit, sit, commodi a facilis aperiam tempore
+            ipsam sequi dolores nemo eveniet provident quam quo architecto vitae nisi ducimus earum eos repudiandae.
+            Vel odit maiores perferendis sed enim delectus eaque, exercitationem aliquid doloribus, a deleniti et
+            dignissimos. Quis doloremque ab qui aliquam non, ea reprehenderit sapiente natus voluptatum molestias beatae!
+            Dolorem, sapiente!
+            Cum sint sit rem obcaecati exercitationem consequuntur, maiores pariatur distinctio necessitatibus culpa harum
+            est reiciendis voluptatibus minima voluptatem expedita amet nemo provident sed numquam. Ad maiores ut culpa
+            nobis accusantium?
+            Ratione voluptatibus nihil et cum iste, delectus debitis. Incidunt corporis, animi deleniti nisi nihil,
+            accusantium quisquam odit rerum nobis, cum nam velit! Laboriosam sequi adipisci pariatur, iste obcaecati dicta
+            architecto.
+        </p>
+
+    </dialog>
+
+  
+</body>
+
+<script>
+    const button = document.querySelector('button')
+    const modal = document.querySelector('dialog')
+    const buttonClose = document.querySelector('dialog button')
+
+
+    button.onclick = function(){
+        modal.showModal()
+        // modal.show()
+}
+
+buttonClose.onclick = function(){
+    modal.close()
+}
+
+//showModal - é um método nativo
+</script>
+</html>

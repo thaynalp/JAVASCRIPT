@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>operador this e arrow function</h3>
+
+    <script>
+       // function aluno(nome, nota) {
+        //     this.nome = nome     
+        //     this.nota = nota
+
+        //     this.dadosAnonimo = function () {  //função anônima, só que gerada com this
+        //         setTimeout(function(){   //setTimeout - gera um atraso na execução, depois ele chama a função que ele foi gerado para chamar
+        //             document.write(this.nome)
+        //             document.write(this.nota)
+                    
+        //         }, 3000)                 //tempo de atraso 3seg
+            
+        //     }
+        // }
+
+        // const aluno1 = new aluno ("Bruno", 100)
+        // aluno1.dadosAnonimo()
+        //nesse caso o rsultado é undefine porque o setTimeout não permite que as variáveis 'nome' e 'nota' criadas dentro da função, chegue até a primeira variável original
+        //impedindo a leitura dos valores e atribuições dadas às variáveis, anteriormente
+        //para resolver isso, usamos a 'arrow function' abaixo
+
+        function aluno(nome, nota) {
+            this.nome = nome     
+            this.nota = nota
+
+            this.dadosArrow = function () {  //função anônima, só que gerada com this
+                setTimeout(() => {   //arrow function sendo utilizada para resolver o problema das variáveis
+                    document.write(this.nome)
+                    document.write(this.nota)
+                 }, 2000)                 //tempo de atraso 2seg
+            }
+        }
+
+        const aluno1 = new aluno ("Bruno", 100)
+        aluno1.dadosArrow()
+    </script>
+</body>
+</html>

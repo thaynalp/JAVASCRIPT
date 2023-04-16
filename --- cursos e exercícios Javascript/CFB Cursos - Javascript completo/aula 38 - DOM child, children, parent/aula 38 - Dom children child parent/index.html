@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>DOM</title>
+</head>
+<body>
+    <h1>Entendendo a relação dos elementos no DOM em Javascript </h1>
+    <h2> Método, Propriedade, filhos, irmãos, Pai, avó do DOM</h2>
+   
+    <strong>
+        caixinha azul - é um PROPRIEDADE. Então NÃO COLOCA o parênteses para ser executado <br>
+        caixinha vermelha - é um MÉTODO ().  Então PRECISA de um parênteses para ser executado <br>
+    </strong>
+  
+
+<br>
+
+<h3>child - filho</h3> <br>
+    <strong>childNode (nó)</strong> - os textos dentro da div são considerados como child, e contabilizam também. <br>
+    <strong>firstChild</strong> - retorna o primeiro elemento dentro do pedido, e se esse elemento tiver um texto, ele retorna entao o texto <br>
+                firstChild retorna as tags e os elementos dentro das tags <br>
+    <strong>lastChild </strong>- retorna o último elemento dentro do pedido, e se esse elemento tiver um texto, ele retorna entao o texto <br>
+                lastChild retorna as tags e os elementos dentro das tags <br>
+<br>
+<strong>children</strong> - retorna somente as tags. Retorna os elementos filhos da div, sem contar os textos
+<br>
+<strong>firstElementChild</strong> - retorna apenas as tags (os elementos). Sem retornar o texto
+<br>
+<strong>lastElementChild</strong> - retorna apenas as tags do último elemento dentro do pedido. Sem texto
+ <br>           
+
+<h3>Siblings - irmãos</h3>
+
+    <main>
+        <div id="caixa1" class="caixa">
+            <div id="id1" class="curso c1">HTML</div>
+            <div id="id2" class="curso c2">CSS</div>
+            <div id="id3" class="curso c3">Javascript</div>
+            <div id="id4" class="curso c4">PHP</div>
+            <div id="id5" class="curso c5">React</div>
+            <div id="id6" class="curso c6">MySQL</div>
+        </div>     
+    </main>
+<script src="script.js"></script>
+</body>
+</html>

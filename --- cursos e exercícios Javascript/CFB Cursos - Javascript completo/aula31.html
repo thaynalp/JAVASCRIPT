@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>getElementByTagName</h1>
+    <h1>usando Spread para criar arrays</h1>
+    <p>retorna uma coleção de elementos da tag</p>
+
+    <div id="c1">poema de alguém que escreve alguma coisa</div>
+    <div id="c2">poema de alguém que escreve alguma coisa</div>
+    <div id="c3">poema de alguém que escreve alguma coisa</div>
+    <div id="c4">poema de alguém que escreve alguma coisa</div>
+    <div id="c5">poema de alguém que escreve alguma coisa</div>
+    <div id="c6">poema de alguém que escreve alguma coisa</div>
+
+
+<script>
+        const dc1 = document.getElementById("c1")   
+        const dc2 = document.getElementById("c2")   
+        const dc3 = document.getElementById("c3")   
+        const dc4 = document.getElementById("c4")   
+        const dc5 = document.getElementById("c5")   
+        const dc6 = document.getElementById("c6")   
+        
+        //retorna um array
+        const arrayElementos = [dc1,dc2,dc3,dc4,dc5,dc6]
+
+        //retorna um htmlcollection
+        const colecaoHTML = document.getElementsByTagName("div") //pegando a tag <div>
+                                                                //se usar o método 'map' aqui nao vai funcionar, só se eu tornar isso um array
+                                                                //map nao é um método de 'HTMLcollection'
+            
+
+//>>> a ideia é transformar o 'htmlcollection' em um array, para poder utilizar os métodos do array, que sao muito mais do que o collection
+//>>> para isso usamos o SPREAD - ele transforma os elementos em um array
+//>>> duas formas de usar o spread:
+        const colecaoHTML = [...document.getElementsByTagName("div")]
+        colecaoHTML = [...colecaoHTML]   //"coleçãoHTML recebe o 'SPREAD' de coleçãoHMTL" ai transforma num array
+</script>
+</body>
+</html>

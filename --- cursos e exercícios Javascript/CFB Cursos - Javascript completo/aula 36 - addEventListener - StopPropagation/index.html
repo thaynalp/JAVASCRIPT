@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Praticando addEventListener com o Método StopPropagation</title>
+</head>
+<body>
+    <h2>Praticando addEventListener() com o Método StopPropagation()</h2>
+    <p>
+        Ao selecionar uma div que engloba outros elementos dentro, e atribuir a ela um evento click <br>
+        o evento de click se propaga para os outros elementos. <br>
+        Para não permitir que isso acontece, usamos o <strong>StopPropagation</strong>
+    </p>
+
+    usamos o target - quem disparou o evento
+    
+    <main>
+        <div id="caixa1" class="caixa">
+            <div id="id1" class="curso c1">HTML</div>
+            <div id="id2" class="curso c2">CSS</div>
+            <div id="id3" class="curso c3">Javascript</div>
+            <div id="id4" class="curso c4">PHP</div>
+            <div id="id5" class="curso c5">React</div>
+            <div id="id6" class="curso c6">MySQL</div>
+        </div>     
+    </main>
+<script src="script.js"></script>
+</body>
+</html>

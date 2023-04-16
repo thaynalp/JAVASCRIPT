@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+    <title>Modal</title>
+    <style>
+        .btn{
+            padding: 10px;
+            background: rgb(92, 140, 182);
+            display: inline-block;
+            color: rgb(0, 0, 0);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+
+        }
+
+        .btn:hover{
+            background: aliceblue;
+            color: rgb(8, 8, 8);
+        }
+
+        .modal{
+            width: 500px;
+            height: 500px;
+            background-color: blue;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: none;
+        }
+
+        .fechar{
+            color: white;
+            padding: 15px 0px 0px 15px;
+            width: 30px;
+            height: 30px;
+            background-color: rgb(226, 55, 55);
+            border-radius: 50%;
+            float: right;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Criando modal em js puro</h1>
+
+    Como criar uma janela modal em javascript: <a href="">https://www.youtube.com/watch?v=C7F4UBCjZEE</a>
+
+    <div onclick="abrir()" class="btn">Clique aqui</div>
+    
+    <div class="modal">
+        <div onclick="fechar()" class="fechar">X</div>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum explicabo placeat animi officiis aspernatur, quos commodi laborum tenetur eos eveniet eius cupiditate fugiat,
+            mollitia totam illo facilis aperiam nulla sequi.
+        </p>
+    </div>
+
+
+
+    <script>
+
+        function abrir(){
+            let modal = document.querySelector('.modal')
+            modal.style.display='block'
+        }
+
+        function fechar(){
+            let modal = document.querySelector('.modal')
+            modal.style.display='none'
+        }
+
+        /*
+        1-o modal está com display none
+        2-ao clicar no botao, ele passa a ter display block e aparece
+        */
+    </script>
+</body>
+</html>

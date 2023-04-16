@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button>mudar de cor</button>
+
+    <script>
+        const button = document.querySelector('button')
+
+        // function mudarCor(){
+        // button.addEventListener('click',()=>{
+        //     document.body.style.backgroundColor='black'
+        //     console.log(button)
+        // })
+        // }
+        // mudarCor()
+
+        
+        function mudarCor(){
+        button.addEventListener('click',()=>{
+            document.body.classList.toggle('dark') //"documento, encontre a lista de classes e alterne para dark"
+            console.log(button)
+        })
+        }
+        mudarCor()
+
+        function mudarTexto(){
+        button.addEventListener('click',()=>{
+           button.innerText='mudooou'//"documento, encontre a lista de classes e alterne para dark"          
+           console.log(button.innerText)
+        })
+        }
+        mudarTexto()
+    </script>
+
+    <style>
+
+        .dark{
+            background-color: black;
+        }
+    </style>
+</body>
+</html>

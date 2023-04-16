@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>operador this - sempre vai fazer referência ao parâmetro da função</h2>
+    <p>'this' é o operador que indica que a variável criada dentro da função, vai receber um parâmetro da função</p>
+    <p>serve para distinguir qual é a variável e qual é o parÂmetro, sem ter que declarar um var let ou const</p>
+<br>
+    em outras palavras:
+    <h2>podemos criar uma 'variável: nome' e falar que ela recebe o parâmetro 'nome': </h2>
+<br>  <p>quando queremos trabalhar com o valor do parâmetro dentro de uma variável, dentro da função!!! </p>
+
+<br>    function aluno(nome, nota){   
+<br>        let nome = nome           
+<br>    }
+<br>
+<h2>'operador this' vai indicar que a variável criada dentro da função, faz referência ao elemento(ao parâmetro) da 'função aluno'</h2>
+
+<br>    function aluno(nome, nota){   
+<br>       this.nome = nome  
+            this.nota = nota         
+<br>    }
+
+    <script>
+        function aluno (nome, nota){
+            this.nome = nome    //variável 'nome' criada com this, vai recber o parâemtro nome
+            this.nota = nota   
+        document.write(nome)
+        document.write(nota)
+        }   
+        aluno ("Bruno", 100)
+
+            
+    </script>
+</body>
+</html>

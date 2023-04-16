@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>async/await</h1>
+    link youtube Canal Roger Melo Async/await: o que é e como funciona | JavaScript puro<a href="">https://www.youtube.com/watch?v=Zl_jF7umgcs</a>
+    
+    Com eles escrevemos códigos que esperam promessas de entrega de arquivo
+    mas funcionam como se fosse de forma assíncrona
+    E chegam os arquivos como se fosse de forma síncrona
+
+    <script>
+        //1 - vamos fzer uma função que recebe uma função assíncrona
+        //2 - e chamamos o fetch, para fazer requisição de url
+        
+        //TODA FUNÇÃO ASYNC RETORNA UMA PROMISE
+        //e encapsula o valor da função dentro da função até que se use o .then()
+        
+        const getPosts = async()=>{
+            const response = await fetch(`https://pokeapi.co/api/v2/pokemon/`)
+            // console.log(response)
+           
+            const data = await response.json()
+            // console.log(data)
+            return data
+        }
+        getPosts().then(value=>console.log(value))
+
+
+        //'await' espera a promessa ser recarregada e devolvo a resposta do que foi solicitado pelo fetch
+        //mesma coisa com json(), que também retorna uma promessa, o 'await' espera a promessa ser recarregada, todos os arquivos chegarem e lança a resposta do arquivo json
+    </script>
+</body>
+</html>

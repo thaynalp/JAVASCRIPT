@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Método - Map()</h1>
+    Map vai percorrer o array e vai executar uma função <br>
+    No map posso passar até 3 parâmetros <br>
+<br>
+    map é um método que executa uma função.
+<br>
+
+    
+    <script>
+        const cursos = ['HTML','CSS','Javascript','PHP','React']
+
+    //     cursos.map((el,i)=>{   //cada elemento da coleção, a cada interação vai vir aqui para o parâmetro da função 
+    //        document.write(` curso: ${el} - posição: ${i}`)                     // i- índice, a posição dos elementos         
+    // })
+
+    let c = cursos.map((el,i)=>{ 
+        return el
+    })
+    
+    document.write(c)        //retornando a função através de uma variável     
+
+ </script>
+</body>
+</html>

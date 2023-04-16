@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aula 43 de Javascript</title>
+        <link rel="stylesheet" type="text/css" href="aula43.css" />
+    </head>
+    <body>
+        <h1>Método Remove() - e tratamento de erros try/catch</h1>
+        <p>O exercício consiste em:</p>
+        <p>
+            Ao marcar os cursos (nos botões de rádio) <br>
+            fazer algumas alterações como: adicionar, remover o curso marcado... <br>
+            quando apertar no botão "curso selecionado" após ter marcado um curso do lado direito <br>
+            o nome do curso será capturado
+        </p>
+        <main>
+            <div id="caixaNovoFuncionalidades" class="caixa">
+                <div id="caixaNovoCurso" class="caixaFuncionalidades">
+                    <label>Nome do curso</label>
+                    <input type="text" name="nomeCurso" id="nomeCurso"/>
+                    <button id="btnAdicionarNovoCurso">Adicionar</button>
+                </div>
+                <div id="caixaRemoverCurso" class="caixaFuncionalidades">
+                    <button id="btnRemoverCurso">Remover Selecionado</button>
+                </div>
+                <div id="caixaCursoSelecionado" class="caixaFuncionalidades">
+                    <button id="btnCursoSelecionado">Curso Selecionado</button>
+                </div>
+            </div>
+            <div id="caixaCursos" class="caixa">
+                <!-- Cursos serão adicionados aqui -->
+            </div>
+        </main>
+        <script src="aula43.js"></script>
+    </body>
+</html>
+

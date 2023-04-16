@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Método map() - outra forma de usar o método, sem ser associado a uma coleção</h1>
+    <h2>usamos método direto da classe'Array' </h2>
+  
+        <div>PHP</div>
+        <div>Javascript</div>
+        <div>FrontEnd</div>
+        <div>Backend</div>
+<br>
+    <script>
+        let el = document.getElementsByTagName("div")
+        const val = Array.prototype.map.call(el,({innerHTML})=>innerHTML) //para pegar uma propriedade do elemento usamos 'chave'
+           console.log(val)
+
+
+           /*------------------------------------*/
+
+        const converterInt =(e)=>parseInt(e)  //arrow function que recebe um valor e retorna esse valor convertido para inteiro 
+        const dobrarValor =(e)=> e*2
+
+        let num = ['1','2','3','4','5'].map(dobrarValor)
+        // let num = ['1','2','3','4','5'].map(converterInt)  //ci=onvertInt é o 'e' que foi dado como parâmetro
+        document.write(num)
+
+        //foi declarada uma coleção de strings que foram convertidas para inteiro
+
+  
+  </script>
+</body>
+</html>

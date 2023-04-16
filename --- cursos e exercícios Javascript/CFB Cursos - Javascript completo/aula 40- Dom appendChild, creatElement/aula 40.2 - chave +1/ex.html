@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exercitando</h1>
+    criar elementos HTML pelo Javascript
+    com números de 1 a 10
+
+    <div id="caixa"></div>
+
+    <script>
+      
+        const caixa = document.querySelector('#caixa')
+        const numeros = ["1","2","3","4","5","6","7","8","9","10"]
+
+        numeros.map((el,chave)=>{
+            const div = document.createElement("div")
+            div.setAttribute("class","nome" +chave)
+            div.innerHTML = el
+            caixa.appendChild(div)
+        })
+
+    </script>
+</body>
+</html>

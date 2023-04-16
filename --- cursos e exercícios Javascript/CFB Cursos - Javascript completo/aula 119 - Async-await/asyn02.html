@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>async/await</h1>
+
+    link Youtube Canal Origamid <a href="">https://www.youtube.com/watch?v=Z5D_Jj6JStw</a>
+
+<script>
+   
+   async function fetchPokemon(url){
+        const response = await fetch(url)
+        const json = await response.json()
+        return json
+    }
+    
+    const urlPok = fetchPokemon(`https://pokeapi.co/api/v2/pokemon/`)
+    urlPok.then(response=>response)
+    .then(data=>{
+        const datas = data.results
+        console.log(datas)
+          datas.map(item=>{
+            fetch(item.url) 
+            .then(responseUrl=>responseUrl.json())
+            .then(dataUrl=>{console.log(dataUrl)
+
+            const cadaPokemon = document.createElement('div')
+            cadaPokemon.innerHTML = `<img src="${dataUrl.sprites.back_default}">`
+            
+            const body = document.body
+            body.appendChild(cadaPokemon) //dentro do body vou acrescentar cadapokemon
+            })
+          })
+})
+    //1- 'async' está informando que a função é assíncrona
+    //2- a função vai receber um parâmetro url
+    //3- "espere até que a requisição de url do fetch seja concluída, para dar o próximo passo"
+    //4- "espera até que a promessa do json seja concluída, e ele entregue de fato um arquivo json para continuar a aplicação "
+    //5- e retorne o arquivo em formato json
+
+    //*essa função toda vai esperar as promessas serem recarregadas para continuar a aplicação
+    //6- depois a função vai ser chamada aqui fora
+    //7- mas quando ela for chamada, vai retornar uma promessa 
+    //8- então usamos o .then()
+   
+    // const requisicao = fetchPokemon(`https://pokeapi.co/api/v2/pokemon/`)
+    // console.log (requisicao)//promise
+    
+    // requisicao.then(response=>response)
+    // .then(data=>data.results.map()={})
+  
+    //objeto json
+
+
+
+//teste
+// const urlPok = fetchPokemon(`https://pokeapi.co/api/v2/pokemon/`)
+//     urlPok.then(response=>response)
+//     .then(data=>{
+//         const datas = data.results
+//         // console.log(datas)
+//           datas.map(item=>{
+//             // console.log(typeof item)
+//             console.log(item)
+//             // fetch(item.url) 
+//             // .then(responseUrl=>responseUrl.json())
+//             // .then(dataUrl=>{console.log(dataUrl)
+
+//             // const cadaPokemon = document.createElement('div')
+//             // cadaPokemon.innerHTML = `<img src="${dataUrl.sprites.back_default}">`
+            
+//             // const body = document.body
+//             // body.appendChild(cadaPokemon) //dentro do body vou acrescentar cadapokemon
+//             })
+//           })
+// })
+</script>
+</body>
+</html>

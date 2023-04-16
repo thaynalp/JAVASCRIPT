@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Manipulando formulário com javascript</h1>
+    <h2>Algumas formas de submiter um formulário com Js</h2>
+
+    Aula Dom - Evento Submit<a href="https://www.youtube.com/watch?v=cYOaKoey6RU"></a> 
+
+    <div class="container">
+        <form action="#" method="post" id="formulario">
+            <div>
+                <label>Usuário</label>
+                <input type="text" name="text_usuario">
+            </div>
+            <div>
+                <label>Senha</label>
+                <input type="password" name="text_senha">
+            </div>
+
+            <div>
+                <h2>3 formas de submiter um formulário:</h2>
+                <!-- <input type="submit" value="entrar"> -->
+                <!-- <button type="button">Entrar</button> -->
+                <input type="image" src="images.jpeg">
+            </div>
+        </form>
+    </div>
+
+    <script>
+        const formulario = document.querySelector("#formulario")
+
+        formulario.addEventListener('submit',(evento)=>{
+            console.log('teste')
+            evento.preventDefault()
+        })
+
+        //preventDefault() - faz com que o botao ao ser clicado, não atualize a página, evitando perda de dados
+        // serve para efetuar verificações e validações
+        //no caso de validações ok, submeter o forumlário, caso contrário preventDefault (não enviar o formulário, evitando perda dos dados)
+    </script>
+</body>
+</html>

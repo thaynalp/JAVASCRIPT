@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <!-- <img style:width:80px; src={props.ligado ? LedVerde : LedVermelho} /> -->
+
+        
+        <button>ligar</button>
+
+
+        <script>
+            const button = document.querySelector('button')
+
+            
+//   const [ligado,setLigado]=useState(false) /*false-vai começar desligado */
+
+// return ligado={ligado} setLigado={setLigado}
+ 
+
+button.addEventListener('click', (e)=>{
+        // console.log(e.target.parentNode.children)
+        // console.log(e.target.parentNode.firstElementChild.innerHTML)
+        const ligDesl= e.target.parentNode.firstElementChild.innerHTML
+        // console.log(ligDesl)
+        // console.log(ligDesl)
+        
+        if(ligDesl == 'ligar'){
+            console.log(button.value='desligar')
+        } else{
+           console.log(button.value='ligar')
+        }})
+        
+
+
+
+        </script>
+</body>
+</html>

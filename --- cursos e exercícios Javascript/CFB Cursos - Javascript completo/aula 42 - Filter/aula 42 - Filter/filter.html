@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Método Filter</title>
+</head>
+<body>
+    <h1>Método filter</h1>
+    Filter - percorre um array e filtra quais elementos desejo desse array para criar um outro array <br>
+
+    teremos um array com várias idades misturadas 
+    e através do filter vou formar um novo array com idades maiores de 18 anos <br>
+    <br>
+    para usar o filter: posso ter uma função que opera os elementos do filter separados ou posso filtrar na prórpia constante/variável <br>
+    <br>
+    método filter - passa os parâmetros: (valor, indice, array) do array que está sendo filtrado <br>
+                    Não é obrigatório usar todos os parâmetros do filter <br>
+                    const filtroMaior18=(valor,indice,arr)=>{} <br>
+  <script>
+         // const filtroMaior18=(valor,indice,arr)=>{}
+        const filtroMaior18 =(valor)=>{
+            if (valor >= 18)  //'se' o 'valor' da idade for maior 18 então retorne 'valor'; o resultado dessa função aparecerá na constante'maior', através do filter 
+            return valor
+        }
+        const idades = [15,21,17,18,44,12,50]
+        const maior = idades.filter(filtroMaior18) //essa 'constante' vai receber o resultado da filtragem do array
+
+        console.log(idades)
+        console.log(maior)
+    //nessa fnção vou retornar a idade que for maior de 18
+    </script>
+</body>
+</html>

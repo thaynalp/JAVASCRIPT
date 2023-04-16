@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>getElementById</h3>
+    <p>consigo um elemento específico do HTML</p>
+<p>
+        1- vamos obter os elementos pelo getElementById <br>
+        2- vamos associar esses elementos a um array <br>
+    
+        <h2>map - estrutura q serve para percorrer um array para poder manipulá-lo</h2>
+        <h2>dar preferência o map para percorrer uma estrutura de array</h2>
+        também conseguimos operar TODOS os elementos de um array (map recebe no seu parâmetro o 'elemento', o 'índice' e o array) <br>
+                mas nao precisamos passar todos os parâmetros para o map, podemos utilizar só um
+    
+        <h2>for-of - serve para percorrer um array para poder manipulá-lo</h2>
+         podemos utilizar um for-of para operar esses elementos (for-of serve para percorrer o array) <br>
+    
+       
+</p>
+    
+    <div id="c1">poema de alguém que escreve alguma coisa</div>
+    <div id="c2">poema de alguém que escreve alguma coisa</div>
+    <div id="c3">poema de alguém que escreve alguma coisa</div>
+    <div id="c4">poema de alguém que escreve alguma coisa</div>
+    <div id="c5">poema de alguém que escreve alguma coisa</div>
+    <div id="c6">poema de alguém que escreve alguma coisa</div>
+
+    
+    <script>
+        // const dc1 = document.getElementById("c1")   //div c1  >>pegar um elemento pelo seu Id 
+        // const dc2 = document.getElementById("c2")   //div c2  >>pegar um elemento pelo seu Id 
+        // const dc3 = document.getElementById("c3")   
+        // const dc4 = document.getElementById("c4")   
+        // const dc5 = document.getElementById("c5")   
+        // const dc6 = document.getElementById("c6")   
+        
+        // dc1.innerHTML = "alterei a propriedade da div que contém o id c1, para esse texto"   //vou pegar o dc1 e vou alterar com a propriedade innerHTML
+   
+//>>>> posso criar um array e percorrer a estrutura com map (mais recomendado) ou for of
+        const dc1 = document.getElementById("c1")   
+        const dc2 = document.getElementById("c2")   
+        const dc3 = document.getElementById("c3")   
+        const dc4 = document.getElementById("c4")   
+        const dc5 = document.getElementById("c5")   
+        const dc6 = document.getElementById("c6")   
+        
+        const arrayElementos = [dc1,dc2,dc3,dc4,dc5,dc6]
+        
+        arrayElementos.map((e)=>{   //map pode receber no seu parâmetro o 'elemento', o 'índice' e o array. ou um deles somente
+            e.innerHTML = "usei o map para percorrer todos os elementos do array criado para abrigar todas as divs que quero"       //cada elemento (e) do array vai ser percorrido e vai ser trocado pelo 'innerHTML' 
+        }) 
+
+        // for(d of arrayElementos)
+        //     d.innerHTML = "alterei o texto de todos os elementos"
+   
+   </script>
+</body>
+</html>

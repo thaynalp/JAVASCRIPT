@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    mudando a cor e o texto
+    <button>mudar</button>
+
+    <script>
+        const button = document.querySelector('button')
+        
+        // function mudarCor(){
+        // button.addEventListener('click',()=>{
+        //     document.body.classList.toggle('dark') //"documento, encontre a lista de classes e alterne para dark"
+        //     button.innerText='mudooou'
+        //     console.log(button)
+        // })
+        // }
+        // mudarCor()
+
+
+        function mudarCor(){
+        button.addEventListener('click',()=>{
+            document.body.classList.toggle('dark') //"documento, encontre a lista de classes e alterne para dark"
+            
+            let btn = button
+            // btn = 'mudar'
+            console.log(btn)
+
+            if(btn != 'mudar'){
+                btn.innerText ='mudooou'
+            }
+        })
+        }
+        mudarCor()
+
+
+  
+    </script>
+
+    <style>
+
+        .dark{
+            background-color: black;
+        }
+    </style>
+</body>
+</html>

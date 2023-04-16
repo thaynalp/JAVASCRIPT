@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relógio Digital</title>
+    <style>
+        #rel{
+            text-align: center;
+            color: #0f0;
+            font-weight: bold;
+            font-size: 30px;
+            width: 150px;
+            background-color: #000;
+
+        }
+
+
+    </style>
+</head>
+    <script>
+        
+        function relogio (){
+            let data = new Date()
+            let hor = data.getHours()
+            let min = data.getMinutes()
+            let seg = data.getSeconds()
+
+            if(hor<10){
+                hor = `0 ${hor} `
+            }
+            if(min<10){
+                min = `0 ${min}`
+            }
+            if(seg<10){
+                seg = `0 ${seg}s`
+            }
+
+            let horas = `${hor}: ${min}: ${seg}`
+            document.getElementById ('rel').value = horas
+
+         }
+
+         let tempo = setInterval(relogio, 1000)
+    </script>
+<body>
+
+    <input type="text" name="" id="rel">
+
+</body>
+</html>

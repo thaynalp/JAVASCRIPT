@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Método map() - transformando HTMLCollection em um array, através do Spread</h1>
+    dessa forma podemos percorrer os elementos com o método map e manipulá-los
+    <h2>Trocando o texto dentro da div, usando innerText e map()</h2>
+  
+        <div>PHP</div>
+        <div>Javascript</div>
+        <div>FrontEnd</div>
+        <div>Backend</div>
+<br>
+    <script>
+        let elemento = document.getElementsByTagName("div")
+        elemento = [...elemento]
+        
+        elemento.map((e,i)=>{
+           console.log(e,i)
+            e.innerHTML = "Alterei o innerHTML por esses texto"  //altera o conteúdo da div
+        })
+   </script>
+</body>
+</html>

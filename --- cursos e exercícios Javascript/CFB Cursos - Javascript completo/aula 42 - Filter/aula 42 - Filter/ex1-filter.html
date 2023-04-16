@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>exercitando - método Filter</h1>
+    <h2>por que o zero nao retornou nos nºs menores de 18???</h2>
+    retornar um array com números maiores ou iguais a 18 <br>
+    e retornar outro array com números menores de 18 <br>
+    <br>
+    <script>
+        const numeros = [18,25,32,36,24,15,28,11,5,0,1,6]
+        const maior18 = numeros.filter((valor)=>{
+            if(valor >= 18)
+            return valor
+        })
+
+        const menor18 = numeros.filter((valor)=>{
+            if(valor < 18)
+            return valor
+        })
+
+        // document.write (numeros)
+        document.write (menor18)
+        console.log(menor18)
+        // document.write (maior18)
+
+    </script></body></html>
