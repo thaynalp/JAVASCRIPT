@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Objeto - uma função dentro de um objeto pode ser uma das propriedades  </h1>
+        <h2>this - usando this em uma função dentro de um objeto</h2>
+        
+        vamos calcular a área de um quadrado, criando um objeto e passando uma função como propriedade
+        essafunção vai receber como parâmetro o 'lado' do quadrado
+
+        cálculo de um quadrado: lado*lado
+        //'this' faz referência ao objto em si. se chamarmos a variável 'lados' aqui diretamente sem colocar o this não funcionará
+<script>
+var quadrado = {
+    lados: 4,
+    area: function(lado){   //função anônima. "area" é como se fosse o nome da função
+        return lado*lado
+    },
+    perimetro: function(lado){
+        return this.lados*lado   //'this' faz referência ao objto em si. se chamarmos a variável 'lados' aqui diretamente sem colocar o this não funcionará
+    },
+}
+
+//outra forma de declarar função dentro do objeto
+var quadrado = {
+    lados: 4,
+    area(lado){    //pode usar sem 'os dois pontos' e a palavra 'function'
+        return lado*lado
+    },
+    perimetro: function(lado){
+        return this.lados*lado  
+    },
+}
+
+console.log(quadrado.lados) //4
+console.log(quadrado.area(5)) //lado*lado= 5*5 = 25
+console.log(quadrado.perimetro(5)) //20 perímetro de um quadrado é lado+lado+lado+lado ou lado*4
+</script>
+</body>
+</html>

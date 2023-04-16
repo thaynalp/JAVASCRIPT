@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Adicionando propriedades e armazendo as propriedas de um Objeto numa variável</h1>
+
+
+    <script>
+
+        //no console do browser escreva 'menu' 
+        //e veja as propriedades que foram adicionadas!
+
+        var height = 500 //se eu nnão usar o 'this' dentro da função, referenciando que o height é exatamente aquele que está dentro da função, ele vai pegar o valor desse height
+        let menu = {
+            width: 800,
+            height: 100,
+            backgroundColor: '#000',
+            metadeHeight(){
+                return this.height / 2 //'this' é o objeto 'menu' menu.height = this.height
+            },                          //escrever no console do browser: menu.metadeHeight() //resposta: 50
+        }
+  
+
+        //trocando valor das propriedades. //nome do objto + nome da propridade
+        menu.backgroundColor = 'white'
+
+        // //adicionando propriedade:
+        menu.color = 'blue'
+
+        //adicionando uma função para dentro do objeto:
+        //escreva no console do browser: menu.esconder()
+        menu.esconder = function(){
+            console.log('escondi')
+        }
+
+        //armazenando numa variável
+        let bg = menu.backgroundColor
+        console.log(bg)
+
+
+    </script>
+</body>
+</html>

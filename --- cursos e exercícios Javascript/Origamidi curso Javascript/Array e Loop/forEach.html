@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Array, loop com ForEach(elemento, index)</h1>
+
+    <script>
+    let videoGames= ['Switch','PS4','XBOX','3DS','SEGA'] 
+
+    // forEach - vai imprimir de 5 'oi', que é a qtde de itens no array 
+    videoGames.forEach(function(){
+        console.log('oi')
+    })
+
+    //para imprimir exatamente os itens do array temos que passar um parâmetro na função
+    videoGames.forEach(function(i){
+        console.log(i)
+    })
+
+    //imprime o elemento e o índice de cada um
+    videoGames.forEach(function(elemento, index){
+        console.log(elemento, index)
+    })
+    </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Array e Loop</h1>
+    <h2>Vamos mostrar o loop como forma de interagir com os elementos do Array</h2>
+
+
+    //loop e length
+    for(let i=0; i< length; i++){
+        console.log(videoGames[i])
+    }
+
+    Lê-se:
+    1-'item' vai começar com zero
+    2-enqanto o 'item' for menor que o 'tamanho' do 'array' (length)
+        exemplo na prática: o array tem 4 itens
+        na primeira iteração o iterador conta 1, dpois 2
+        e enqnto essa iteração não alcança o tamanho total do array, o iterador vai continuar iterando com mais 1
+
+    3- videoGames[item] - esse iterador vai ser iterado no array'videoGames' e percorrer tooodo os elementos do array
+     para indicarmos um índice do array colocamos:
+     videoGames[0]
+     videoGames[1]
+     e dessa forma então estamos acessando todos os índices de todos os elementos desse array, de modo automatizado
+
+    <script>
+        let videoGames= ['Switch','PS4','XBOX','3DS','SEGA'] 
+        
+        //fazendo contagem
+        for(let item=0; item < 4; item++){
+            console.log(item) //0 1 2 3 e mostra uma contagem de zero a três
+        }
+
+        //loop interagindo com o array
+        //citamos o nome do array e colocamos o item do iterador como o item do array
+        //nesse exemplo estamos dizendo que '4' são os índices disponíveis, mas se não quisermos colocar os itens com exatidão, podemos colocar o 'length'
+        //o length vai contar quantos itens tem no array e fazer a iteração com o tamanho do array até completar tdos os itens
+       
+        for(let item=0; item < 4; item++){  
+            console.log(videoGames[item])
+        }
+
+        //loop e length
+        for(let item=0; item < videoGames.length; item++){
+            console.log(videoGames[item])
+        }
+
+        // Lê-se:
+        // 1-'item' vai começar com zero
+        // 2-enqanto o 'item' for menor que o 'tamanho' do 'array' (length)
+        //     exemplo na prática: o array tem 4 itens
+        //     na primeira iteração o iterador conta 1, dpois 2
+        //     e enqnto essa iteração não alcança o tamanho total do array, o iterador vai continuar iterando com mais 1
+
+        // 3- videoGames[item] - esse iterador vai ser iterado no array'videoGames' e percorrer tooodo os elementos do array
+        //  para indicarmos um índice do array colocamos:
+        //  videoGames[0]
+        //  videoGames[1]
+        //  e dessa forma então estamos acessando todos os índices de todos os elementos desse array, de modo automatizado
+
+    </script>
+</body>
+</html>

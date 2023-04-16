@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Exercitando Objeto</h2>
+
+    <script>
+        //exercício 1
+        // let dados = {
+        //     nome: 'Thayná',
+        //     sobreNome: 'Lopes',
+        // nomeCompleto(){
+        // let espaço = " "
+        // let nCompleto = this.nome + espaço + this.sobreNome
+        // console.log(nCompleto)
+        // }
+        // }
+
+        //ou
+        // let dados = {
+        //     nome: 'Thayná',
+        //     sobreNome: 'Lopes',
+        //     cidade: 'Rio de Janeiro',
+        // }
+        
+        // dados.nomeCompleto = function(){
+        //     return `${this.nome} ${this.sobreNome}`
+        // }
+
+        //escreva no console do browser:
+        //dados.nomeCompleto() //Thayná Lopes
+
+        //exercício 2
+        // let carro = {
+        //     preco: 1000,
+        //     portas: 4,
+        //     marca: 'Audi',
+        // }
+        // carro.preco = 3000
+        // let precoModif = carro.preco = 3000
+
+        // console.log(carro.preco)
+        // console.log(precoModif)
+      
+    let cachorro = {
+        raca: 'labrador',
+        cor: 'preto',
+        idade: 10,
+        latir (pessoa){  //late ao ver um homem. 'pessoa' é o parâmetro pq uma pessoa pode ser um homem ou uma mulher, e podemos fazer o tratamento de erros dessa forma
+            if(pessoa == 'homem'){
+                return 'latir'
+            } else {
+                return 'não late'
+            }
+        }
+    }
+//escreva no console do browser: cachorro.latir('homem')
+
+    </script>
+</body>
+</html>
