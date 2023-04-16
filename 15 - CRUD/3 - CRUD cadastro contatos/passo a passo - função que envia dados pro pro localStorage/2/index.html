@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+
+    <h2>Passo 2: Enviar dados pro local storage. <br> </h2>
+    
+<h2>Fluxo do código:</h2>
+<ol>
+    <li>criar uma função que vai receber os dados dos clientes</li>
+    <li>ter um banco de dados com os dados dos clientes. Nesse caso é um JSON 'tempClient'</li>
+    <li>pegar os dados que estão no localStorage e armazenar numa variável que vai receber um array</li>
+    <li>pela condicional, verificar se existe um array no localStorage, caso não, pedir para retornar um para poder acrescentar dados</li>
+    <li>colocar o método push para jogar os dados que estão vindo do banco de dados, para o array</li>
+    <li>enviar pro localStorage os dados que estão no array</li>
+</ol>
+
+    <h3>outra forma de pensar no fluxo do código:</h3>
+<ol>
+    <li>enviar pro localStorage os dados que estão no array</li>
+    <li>pegar os dados que estão no localStorage e armazenar na variável do array</li>
+    <li>colocar o método push para jogar os dados que estão vindo do banco de dados, para a variável</li>
+</ol>
+
+<hr>
+<h2>Métodos utilizados:</h2>
+
+<ol>
+    <li>localStorage</li>
+    <li>localStorage.getItem('chave')</li>
+    <li>localStorage.setItem('chave','value')</li>
+    <li>JSON.parse()</li>
+    <li>JSON.stringify()</li>
+    <li>push()</li>
+    <li>condicional if else ??[]</li>
+</ol>
+
+<h2>Interpretando o código:</h2>
+
+<code>
+    const db_client = JSON.parse(localStorage.getItem('db_client')) ??[]
+</code>
+
+<ul>
+    <li>Aqui o getItem vai tentar trazer o que estiver no localStorage com a chave 'db_client', pra variável 'db_client'</li>
+    <li>mas como essa variável não é um array, e ela está tentando usar o método push() para inserir dados</li>
+    <li>ele vai mandar um erro, dizendo que push não é um método de createClient</li>
+</ul>
+
+
+<ul>
+    para tratar esse erro, coloca-se uma condição:
+    <li>?? []  "se o localStorage receber valor vazio, null (porque o push não está conseguindo enviar os dados ainda)...</li>
+    <li>retorne um array vazio para poder começar a acrescentar dados aí"</li>
+</ul>
+
+<h3>localStorage.getItem('chave') </h3>
+    >>> pega o que tem no localStorage, com a chave passada   
+
+    <h3>Método push()</h3>
+    Este método adiciona um ou mais elementos ao final de um array e retorna o novo comprimento desse array.
+<br>
+<br> NÃO PODE MANDAR UM ARRAY VAZIO PARA O LOCALSTORAGE!
+<br> TEM QUE LER O QUE JÁ ESTÁ NO LOCALSTORAGE E MANDAR OS DADOS DE VOLTA
+<br>   USA-SE ENTÃO:  getItem('chave')
+
+    <h3>localStorage.getItem('chave')</h3>
+    <p>a chave é um nome qualquer que criamos para referenciar os dados que estão chegando.</p>
+
+    <p>
+        quando os dados são capturados do localStorage e enviados de volta pro array, eles voltam no formato de string,
+        porque havíamos tranformado em string para mandar o localStorage.
+        Mas o array não aceita formato String, então precisa transformar em JSON novamente
+        para isso usamos o método:
+    </p>
+
+    <h3>Método JSON.parse</h3>
+    <p>
+        JSON.parse() analisa uma string JSON de acordo com a gramática JSON e avalia a string como se fosse uma expressão JavaScript. 
+    </p>
+    Sintaxe:
+<br>    JSON.parse(text)
+<br>    JSON.parse(text, reviver)
+
+
+
+    <script src="script.js"></script>
+
+    <style>
+        body{
+            margin: 30px;
+        }
+    </style>
+</body>
+</html>

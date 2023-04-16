@@ -1,17 +1,14 @@
 var arr=[]
 
-
 function addItem(){
     if(localStorage.meuArr){
-        arr = JSON.parse(localStorage.getItem('meuArr'))
+        arr = JSON.parse(localStorage.getItem('meuArr'))  //pegando dados do localStorage
     }
-    
     let novoItem = document.getElementById('input').value
     arr.push(novoItem)
     document.getElementById('input').value = ''
-   
 
-    localStorage.meuArr = JSON.stringify(arr)
+    localStorage.meuArr = JSON.stringify(arr)  //enviando dados pro localStorage
 }
 
 function showItems(){

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h1>Enviar dados pro local storage</h1>
+
+    <h3>localStorage.setItem('chave','value')</h3>
+
+    <p>
+        Nesse exercício a chave é 'db_client' e o valor é 'client'
+        'client' é um callback que vem da base de dados temporária chamada 'tempClient', em formato JSON.
+    </p>
+
+    <p>
+        O localStorage só aceita dados em formato STRING.
+        vamos então usar o método JSON.stringify
+    </p>
+
+    <h3>JSON.stringify() </h3>
+    é um método estático converte um valor JavaScript em uma string JSON
+    
+    <ul>
+        Sintaxe:
+        <li>JSON.stringify(value)</li>
+        <li>JSON.stringify(value, replacer)</li>
+        <li>JSON.stringify(value, replacer, space)</li>
+    </ul>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
