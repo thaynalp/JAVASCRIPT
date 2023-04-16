@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Loop For</h1>
+    <h2>Exercício ímpar-par</h2>
+    <br> do 0 ao 99
+    <br> do 1 ao 100
+    <br>
+
+    <script>
+        for (let numero = 0; numero <100; numero++){
+            if(numero%2 == 0) {  //se numero divido por 2 der resto zero, é par, senão ímpar
+            document.write(`${numero} é PAR <br>` )
+        } else {
+            document.write(`${numero} é ÍMPAR <br>`)
+        }
+    }
+
+    for (let numero = 1; numero <=100; numero++){
+            if(numero%2 == 0) {  //se numero divido por 2 der resto zero, é par, senão ímpar
+            document.write(`${numero} é PAR <br>` )
+        } else {
+            document.write(`${numero} é ÍMPAR `)
+        }
+    }
+    </script>
+</body>
+</html>

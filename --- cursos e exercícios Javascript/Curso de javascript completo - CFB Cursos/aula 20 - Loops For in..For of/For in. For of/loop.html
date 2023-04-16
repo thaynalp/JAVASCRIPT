@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Loop For-in / For-of - É uma variação do loop For</h1>
+    <h2>criamos uma variável, que vai receber os elementos da coleção que vamos trabalhar</h2>
+    <h2>Loops são indicados para percorrer uma coleção</h2>
+
+<br>    for (n in num){
+<br>        console.log(num)
+<br>    }
+<br>
+
+    <script>
+        let num=[10,20,30,40,50]
+
+        //(for-in) itera os elementos na coleção, mas temos que chamar a coleção e indicar os elementos
+        for(n in num){
+        //     // document.write(num)  //num = elementos do array
+        //     // document.write(`${n} <br>`)  //n = índice
+        //     document.write(`${num} <br>`)
+               document.write(`${num[n]} <br>`) 
+        }
+
+       //(for-of) vai dentro do elemento que ele está iterando. itera diretamente os elementos na coleção 
+        for(n of num) {
+            document.write(n)
+        }
+
+       //(length) imprimir os elementos da coleção, na posição n 'num[n]' 
+        for(let n=0; n< num.length; n++){
+            document.write(`${num[n]} <br>`) 
+            // document.write(n) //índice
+            // document.write(number) //array
+
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Função</title>
+</head>
+<body>
+        <h1>Função e looping For</h1>
+
+        Vamos declarar a função e chamá-la. <br>
+        o looping é para fazer a repetição da função quantas vezes for pedido
+
+    <script>
+
+        /*
+        function nome(){
+            document.write(`Estou aprendendo função`)
+        }
+
+        //nome() //chamando a função
+
+        for(let i=0; i<10; i++ )  {  //posso colocar num 'loop' para repetir a minha função quantas vezes eu quiser
+            nome()   
+        }
+        */
+        function soma() {
+            let n1 = 2
+            let n2 = 10
+            let soma = n1 + n2
+            document.write(soma)
+        }
+        //até aqui a função só está declarada
+
+        for (let i=0; i<10; i++){
+            soma()
+        }
+        //aqui ela vai ser chamada para rodar, de acordo com as especificações em que foi criada 
+
+
+        /*
+        1 - criado uma função soma para somar o valor de duas variáveis
+        2 - e vou executar a soma delas no html da pág*
+        3 - e repetir essa mesma operação 10 vezes através do loop/
+        */
+    </script>      
+</body>
+</html>

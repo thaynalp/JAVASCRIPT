@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Evento de click e função</h3>
+    <h2>Ao clicar no botão o texto atual irá mudar</h2>
+    <div id="d1">Bruno</div>
+    <div id="d2">Carla</div>
+    <div id="d3">Novo Curso de Javascript</div>
+    <button onclick="mudarTexto()">Mudar Texto</button>
+
+<script>
+    function mudarTexto () {
+        let d1 = document.querySelector ('#d1')
+        let d2 = document.querySelector ('#d2')
+        let d3 = document.querySelector ('#d3')
+
+        d1.innerHTML = "Ao clicar no botão trocou o texto que estava, para esse texto que você está lendo."
+        d2.innerHTML = "Ao clicar no botão trocou o texto que estava, para esse texto que você está lendo."
+        d3.innerHTML = "Ao clicar no botão trocou o texto que estava, para esse texto que você está lendo."
+    }
+
+    //Antes de tudo crio uma tag 'button' q vai receber uma 'function'
+   // a função do botão é que quando ele for clicado, deverá trocar as informações de html nas divs
+   
+    // 1 - atribuo uma variável para cada div
+    // 2 - procuro as ids pelo querySelector
+    // 3 - e atribuo um innerHTML para cada variável criada, porque o innerHTML troca o conteúdo HTML, para o conteúdo que eu quiser no HTML
+    
+    
+    // O innerHTML é uma propriedade do Element que define ou retorna o conteúdo HTML de um elemento.
+    
+    //vou executar o código da função somente quando clicar no botão
+</script>
+</body>
+</html>

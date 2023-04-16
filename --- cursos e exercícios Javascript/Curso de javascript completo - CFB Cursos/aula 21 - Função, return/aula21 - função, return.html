@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Funções que retornam valores</h3>
+    **para o return funcionar temos que chamar o nome da função atrelado a um outro elemento, <br>
+     seja ele o console.log(), document.write() ou uma variável que receberá o retorno
+     
+     function canal() {
+        return "CBF cursos"
+    }
+    document.write(canal())
+
+    
+   * oooou podemos atribuir a uma variável:
+
+   let retornoFunção = canal()
+   document.write(retornoFunção())
+
+    <p>vamos utilizar o comando return</p>
+    <p>que vai retornar um valor para quem chamou a função</p>
+    <p>**o retorno pode ser armazenado numa variável e ser chamada pela variável, ao invés de ser chamada pelo nome da função</p>
+    <p>abaixo o resultado do retorno da função após executada</p>
+<script>
+/*    
+    function canal() {
+        return "CBF cursos"
+    }
+
+    document.write(canal()) 
+
+   * oooou podemos atribuir a uma variável:
+
+    let retornoFunção = canal()
+    document.write(retornoFunção())
+
+
+
+    //o return retorna uma string
+    //ao chamar a função ela vai te retornar a string, então
+
+    function multiplicacao () {
+        let n1 = 10
+        let n2 = 2
+        let resultado = n1*n2
+        return resultado
+    }
+    //aq foi declarada a função, que vai retornar o multiplicação da variável 'resultado'
+
+    document.write(multiplicacao())     // execução da função
+
+
+
+    let num = multiplicacao()     // aqui foi criada uma variável que vai armazenar o retorno da função 
+  */
+
+
+  function canal () {
+    let n1 = 10
+    let n2 = 2
+    let resultado = n1*n2
+    if (resultado %2 == 0) {   //se o resultado, dividido por 2, der resto zero, então
+        return "par"
+    } else
+    return "ímpar"
+  }  //função declarada
+
+  let resultado = canal()     //função armazenada numa variável
+  document.write(resultado)       //resultado da função impressa no write
+  //exucução da função
+</script>
+</body>
+</html>

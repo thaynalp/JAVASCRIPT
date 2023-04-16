@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+     //posso criar uma variável antes da função também
+    //e passar a variável como valor para os parâmetros
+    
+    const  valorPadrao = 100
+    function soma (n1=valorPadrao, n2=valorPadrao) {
+        let res
+        res = n1+n2
+        return res
+    }
+    
+    let resultadoSoma = soma(13)  //valorPadrao =100 /n1=12/ n2=100  12+100=112
+    alert(resultadoSoma)
+</script>
+</body>
+</html>

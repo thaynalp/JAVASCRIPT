@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Função</title>
+</head>
+<body>
+    <h1>Funções com parâmetros</h1>
+    <h2>obs: podemos operar uma variável que está fora da função</h2>
+    
+    é quando queremos entrar com valores para dentro da função <br>
+    colocamos valores nos parâmetros da função e eles são operados dentrod a função <br>
+    <h2>diversas formas de pegar o valor e declarar nas funções</h2>
+    <p>algumas formas de pegar o valor da função. Seja armazenada no return e numa variável, seja em parâmetros</p>
+
+
+
+<script>
+/*
+function soma (p1) {
+    document.write (p1)
+}    
+
+soma("Bruno")
+soma(2022)
+soma(5.2)
+*/
+/*--------------------------------------------------------------*/
+
+/*
+    function soma (n1, n2) {
+        document.write(n1+n2)  //quando a função for chamada, ou executada - será feito isso no console.log
+    }
+
+    soma(10,5)  //executando/chamando a função: e imprime no document.write- de acordo com as especificações da função
+*/
+/*--------------------------------------------------------------*/
+
+/*
+function soma (n1=0, n2=0) {   // posso indicar 'valores padrões' para os parâmetros
+        document.write(n1+n2)  
+}
+
+soma(10)  //dessa forma só indiquei valor para o n1
+            //entao no document.write ele vai somar 10+0=10
+*/
+/*--------------------------------------------------------------*/
+
+function soma (n1, n2) {
+    return n1+n2
+}
+let resultadodafuncao = soma() 
+document.write(soma(10,10))
+
+
+
+/*
+mais explicadinho, passo a passo:
+
+function soma (n1, n2) {
+    let resultado
+    resultado = n1+n2   //'resultado' vai receber a conta n1+n2 dos parâmetros
+    return resultado      //e o retorno vai ser'resultado' com a soma de fato 
+
+}
+
+let resultadodafuncao = soma()  // a variável criada vai armazenar o retorno da função
+document.write(soma(2,100))    //e vou colocar o document.write para imprimir os parâmetros passados
+
+*/
+
+</script> 
+</body>
+</html>

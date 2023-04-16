@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Função</title>
+</head>
+<body>
+    <h1> Função - Parâmetros REST</h1>
+    <p>
+        É uma função sem números determinado de valores ou parâmetros <br>
+        é quando não é preciso especificar a quantidade de parâmetros de uma função
+    </p>
+
+    function soma (...valores) {
+        return valores.length    //aqui faz com que retorne a quantidade de parâmetros da função
+    }
+    
+    document.write(soma(2,5,6))
+    <br>
+    os 3 potinhos é um 'spread' que transforma esse parâmetro em 'rest' <br>
+    Ao fazer isso o parâmetro vira automaticamente um Array' <br>
+    o tratamento do 'return' para esta função agora precisa do 'length' <br>
+    que vai verificar o 'tamanho' do parâmetro da função <br>
+    <H1>ACOMPANHE O RESTO PELO VSCODE - EM JAVASCRIPT</H1>
+
+    
+    <h2>usando o loop 'for'</h2>
+    <p>for-of - é um looping para percorrer coleção de valores. 
+        geralmente utilizado para percorrer arrays ou parâmetros das funções REST, onde os valores dos parâmetros são acrescentados a vontade
+    </p>
+
+
+    <p>nao preciso especificar a quantidade de parâmetros da função</p>
+    <script>
+
+     /*   
+        function soma (...valores){  //tá indicando q estou usando padrao de parâmetros rest
+           return valores.length //tá passando a qtde de parâmetros dentro da função.
+        }
+
+        document.write (soma(10,5,50,2,3))  
+        //aqui nao vai retornar a soma da função
+        // vai retornar a qtde de valores no caso 5 valores passados para o parâmetro da função 
+
+        //para operar esses valores...
+        //
+
+        */
+        function soma (...valores ) { //parâmetro REST
+        let tamanho = valores.length //vai armazenar a qtde de parâmetros da função.nesse exemplo sao 5 valores
+        let res = 0                  //'res' vai guardar a soma dos parâmetros
+        
+        for (let i=0; i<tamanho; i++){   // looping 'for' vai percorrer o tamanho do parâmetro da função e vai operando esses valores a cada interação
+            res+= valores[i]  //resultado+resultado = valores no índice a partr do zero
+            
+        }
+        return res
+        }
+
+        //função declarada
+
+        document.write(soma(10,10,50,20,10))   //agr ele vai somar os parâmetros passados função
+                                                //posso ir add valores e ele vai somando
+    /*
+    estrutura de repetição for
+    lê-se: 
+
+    1 - i=0; enqnto o índice for menor que o tamanho da qtde de parâmetros da função, ele vai continuar acrescentando mais um looping
+    2 - o resultado + resultado = parametros da função no indice q começa com zero
+    
+    </script>
+</body>
+</html>

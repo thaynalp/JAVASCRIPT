@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Função Anônima - Arrow function</h3>
+    função anônima precisa de uma variável para ela ser declarada: <br>
+    const nomeVariavel = ()=>{ }  <br>
+
+    <p>let nomeDaFunção (parâmetros aqui) => {retorno aqui}</p>
+    <p>na verdade, no arrow function nao precisa de return, nem dos parenteses(quando for declarado apenas um parametro)</p>
+   <br>
+    const nome = n=>{return n}
+    const nome = n=>n
+
+    document.write(nome("Bruno"))
+
+
+    const add =n =>n+10 
+    document.write(add(10))  //retorna 20
+<script>
+    const soma = (v1,v2) => {return v1+v2} // declarando a função anônima
+    document.write(soma(10,5))          //chamando a função
+
+    const subt = (v1,v2) => v1-v2  //posso usar sem o return
+    document.write(subt(50,8))
+
+    const nome = nome1 => nome1       //se for usar apenas um parâmetro, posso usar sem parenteses também
+    document.write (nome(Pedro))   //na função nome vou declarar um parâmetro para ser impresso
+</script>
+</body>
+</html>

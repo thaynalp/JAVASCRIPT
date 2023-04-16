@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>For-of - iterando e trocando elementos de texto </h1>
+
+    <div>Olá</div>
+    <div>Hello</div>
+    <div>Saudações</div>
+
+
+
+<script>
+    const objs = document.getElementsByTagName("div")
+
+    for (i of objs){  //retorna o elemento div
+        console.log(i)
+    }
+
+    for (i of objs) { //retorna o índice
+       i.innerHTML = "Olá, humanos!"
+    }
+
+    for(i in objs){  //retorna o length, item, namedItem
+   console.log(i)
+    }
+</script>
+</body>
+</html>

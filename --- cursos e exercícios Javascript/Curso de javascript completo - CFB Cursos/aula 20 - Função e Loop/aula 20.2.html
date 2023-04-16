@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Função - usando innerHTML</title>
+</head>
+<body>
+    <h3>Mudando o texto das divs com função</h3>
+    <div id="d1">Bruno</div>
+    <div id="d2">Carla</div>
+    <div id="d3">Novo Curso de Javascript</div>
+   
+
+
+    <script>
+        function mudarTexto () {
+          let d1 = document.querySelector('#d1')   
+          let d2 = document.querySelector('#d2')
+          let d3 = document.querySelector('#d3')
+
+          d1.innerHTML = "Mudei o texto das divs, manipulando o DOM, para essa mensagem que você está lendo agora"
+          d2.innerHTML = `Mudei o texto das divs, manipulando o DOM, para essa mensagem que você está lendo agora`
+          d3.innerHTML = `Mudei o texto das divs, manipulando o DOM, para essa mensagem que você está lendo agora`
+        }
+            
+        //  declarei a funcion acima  //declarei a função com manipulação do DOM, para mexer nas divs
+        //e chamei
+        
+        mudarTexto ()   
+
+
+
+
+        
+        /*
+        for (i=0 i<12 i++) {
+            mudarTexto()
+        }
+        */
+       
+    </script>
+</body>
+</html>

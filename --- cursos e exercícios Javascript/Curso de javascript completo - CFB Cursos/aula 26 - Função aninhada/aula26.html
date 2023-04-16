@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Função Aninhada - Função dentro de outra função</h2>
+
+    <p>função anônima, arrow function, com parâmetro REST</p>
+    <p>for-of - é um looping para percorrer coleção de valores. 
+        geralmente utilizado para percorrer arrays ou parâmetros das funções REST, onde os valores dos parâmetros são acrescentados a vontade
+    </p>
+<script>
+ 
+ const soma = (...valores) => {  //função com parâmetro REST (serve para quando for chamar a função, colocar valores com qtde indefinidade, quantos parÂmetros quiser add)
+    const somar = val => {   //para somar esses valores vou criar outra função 'somar; com um parâmetro de entrada 'val'e vai operar somando os valores q estão dentro de '...valores'
+    let res = 0             //resultado=0
+    for (v of val)    //uma estrutura de repetição p percorrer o "array"(o parâmetro rest, é chamdo de array pq vai recber alguns valores, igual uma estrt de array)
+    res+=v
+    return res       //esse 'return' é da função 'somar'
+}
+   return somar(valores)       //chamando a função somar para fazer ela rodar. 'somar' está dando o retorno da função 'soma'
+}                               //o return está aí para a função 'soma' ser chamada. no caso queremos retornar o retornno, da função somar
+                                //função soma vai gerar um resultado e a função somar vai retornar o reultado da função soma
+
+
+document.write (soma(50,5,15))   //esses parâmetros estão indo para a função soma
+
+/*
+1ºloop - v=10 e soma com a o valor de res=0, entao res passa a valer 10
+2ºloop - v=5 e soma 10+5= 15
+3ºloop - v=15 e soma 15+15= 30
+acabando as interações, retorna o valor de res=30
+esse retorno vai p quem chamou a função. é o return da função soma
+*/
+</script>
+</body>
+</html>

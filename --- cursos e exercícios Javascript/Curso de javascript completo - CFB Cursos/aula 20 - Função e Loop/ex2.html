@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Exercitando 2 - usando function normal</h3>
+    <p>Na função normal chamamos o evento de click dentro da tag, no HTML. <br>
+        e criamos a função no JS
+
+    </p>
+    <h2>Ao clicar no botão o texto atual irá mudar</h2>
+    <div id="d1">Bruno</div>
+    <div id="d2">Carla</div>
+    <div id="d3">Novo Curso de Javascript</div>
+    <button onclick="mudarTexto()">Mudar Texto</button>
+
+    <script>
+        let d1 = document.querySelector('#d1')
+        let d2 = document.querySelector('#d2')
+        let d3 = document.querySelector('#d3')
+
+        function mudarTexto() {
+            d1.innerHTML = "Ao clicar no botão trocou o texto que estava, para esse texto que você está lendo."
+            d2.innerHTML = "Ao clicar no botão trocou o texto que estava, para esse texto que você está lendo."
+            d3.innerHTML = "Ao clicar no botão trocou o texto que estava, para esse texto que você está lendo."
+        }
+
+    </script>
+</body>
+
+</html>
