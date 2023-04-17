@@ -16,7 +16,8 @@ _Projetos em Javascript #1_
     
 **outro projeto na sub-pasta(ball-move):**
     
-    .ball-move{left: calc(100% - 40%);} - com CSS foi utilizado esse comando, que faz com que a bola do botão se mova, ao clicar. 
+    .ball-move{left: calc(100% - 40%);} - com CSS foi utilizado esse comando, 
+                                          que faz com que a bola do botão se mova, ao clicar. 
     
                          
     position relative e position absolute para posicionar o botão em formato de bola e a estrutura dele.
