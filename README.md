@@ -28,7 +28,7 @@ _Projetos em Javascript #1_
 <br>
      
 ## <div align="center"> :link: <a href="https://github.com/thaynalp/Contador-em-JS" target="_blank">código do projeto</a></div>
-## <div align="center"> :link: <a href="https://thaynalp.github.io/Contador-em-JS/" target="_blank">Projeto: contador</a></div>
+## <div align="center"> :link: <a href="https://thaynalp.github.io/Contador-em-JS/" target="_blank">Interaja aqui: contador</a></div>
 
 <div align="center"> <img  height="200" alt="coding-time" src="https://user-images.githubusercontent.com/112887006/228672489-db7af0a0-bc5d-4636-b7bb-73f47e2d8f87.png"></div>
 
