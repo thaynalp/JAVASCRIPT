@@ -2,7 +2,7 @@
 _Projetos em Javascript #1_
  
 
-### :open_file_folder: 07 - Validador de quantidade de caracteres `<textarea maxlength="20"></textarea>`
+### :open_file_folder: 07 - Validador de quantidade de caracteres`<textarea maxlength="20"></textarea>`
 
 
 <p align="center">
