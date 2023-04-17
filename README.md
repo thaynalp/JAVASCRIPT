@@ -74,8 +74,8 @@ _Projetos em Javascript #1_
      
      Conceitos utilizados em JS: 
      
-     addEventListener('input',()=>{}) - Evento de 'input'. Nesse projeto, quando o usuário selecionar uma cor no 'input color' 
-                                        será executada uma função.
+     addEventListener('input',()=>{}) - Evento de 'input'. 
+                                        Nesse projeto, quando o usuário selecionar uma cor no 'input color' será executada uma função.
      
     .value - é uma propriedade que serve para capturar o valor recebido por um input. 
      
@@ -102,9 +102,10 @@ _Projetos em Javascript #1_
     
     Conceitos utilizados em HTML e JS:
     
-    <textarea maxlength="20"></textarea> - 'maxlength' é a propriedade que determina o máximo de strings recebidas no input 'textarea'
-                                            em JS chamamos essa propriedade assim: textarea.maxLength
-                                            e para capturar o quantas strings estão sendo digitadas: textarea.value.length
+    <textarea maxlength="20"></textarea> - 'maxlength' é a propriedade que determina o máximo de strings 
+                                            recebidas no input 'textarea' em JS.
+                                            chamamos essa propriedade assim: textarea.maxLength. 
+                                            E para capturar o quantas strings estão sendo digitadas: textarea.value.length
      
     addEventListener('input',()=>{} - o valor do input será recebido e executará uma função a partir daí
 
