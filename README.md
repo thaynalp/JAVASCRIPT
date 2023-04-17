@@ -11,8 +11,8 @@ _Projetos em Javascript #1_
     
     Conceitos utilizados em CSS e JS: 
     
-    classList.toggle() - o método toggle pertence ao objeto classList de um elemento. Ele irá inserir a 
-                         classe caso não exista e remover caso exista.
+    classList.toggle() - o método toggle pertence ao objeto classList de um elemento.
+                         Ele irá inserir a classe caso não exista e remover caso exista.
     
 **outro projeto dentro desta pasta:**
     
@@ -25,8 +25,8 @@ _Projetos em Javascript #1_
  
      Conceitos utilizados em JS: 
      
-     setAttribute() - método que adiciona um novo atributo ou modifica o valor de um atributo existente num elemento específico,
-                      elemento de class, por exemplo
+     setAttribute() - método que adiciona um novo atributo ou modifica o valor de um atributo existente 
+                      num elemento específico, elemento de class, por exemplo
  
      addEventListener('click',()) - método que escuta um evento, nesse caso, de click e executa uma função
       
@@ -55,12 +55,12 @@ _Projetos em Javascript #1_
     Conceitos utilizados em JS: 
     
     Math.random() - função usada para retornar um nº aleatório de ponto flutuante (nºs reais) entre 0 e 1 (ex: 0.8244415641011535).
-                    Este nº aleatório pode ser escalado de acordo com o intervalo desejado, multiplicando o nº de ponto flutuante
-                    pelo nº máximo que queremos gerar.
+                    Este nº aleatório pode ser escalado de acordo com o intervalo desejado, 
+                    multiplicando o nº de ponto flutuante pelo nº máximo que queremos gerar.
                     Imagine que você precise de um nº aleatório entre 0 e 20, isso é possível através da fórmula Math.random() * 21.
                     
-    Math.floor() -  função usada para arredondar o número passado como parâmetro para seu inteiro mais próximo,
-                    levando como base o valor menor.
+    Math.floor() -  função usada para arredondar o número passado como parâmetro
+                    para seu inteiro mais próximo, levando como base o valor menor.
     
     length - propriedade que retorna o 'comprimento do caracter'
     
