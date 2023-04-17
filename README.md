@@ -14,10 +14,10 @@ _Projetos em Javascript #1_
     classList.toggle() - o método toggle pertence ao objeto classList de um elemento.
                          Ele irá inserir a classe caso não exista e remover caso exista.
     
-**outro projeto dentro desta pasta:**
+**outro projeto na sub-pasta(ball-move):**
     
     .ball-move{left: calc(100% - 40%);} - com CSS foi utilizado esse comando, que faz com que a bola do botão se mova, ao clicar. 
-    (na pasta ball-move)
+    
                          
     position relative e position absolute para posicionar o botão em formato de bola e a estrutura dele.
  
