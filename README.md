@@ -2,7 +2,7 @@
 _Projetos em Javascript #1_
  
 
-### :open_file_folder: 15 - Carregando o próximo projeto: [Searchlist]!
+### :open_file_folder: 15 - Carregando o próximo projeto...
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/112887006/232645199-fef7e43e-e29e-486d-885a-b8eebdc9f0ef.png" />
