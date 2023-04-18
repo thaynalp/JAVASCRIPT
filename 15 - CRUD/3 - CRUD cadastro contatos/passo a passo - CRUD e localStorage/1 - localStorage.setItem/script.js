@@ -1,4 +1,4 @@
-//base de dados temporária em formato [JSON]
+//base de dados temporária em formato [OBJETO]
 const tempClient ={
     nome: 'Ana',
     email: 'ana@gmail.com',
