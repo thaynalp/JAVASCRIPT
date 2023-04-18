@@ -2,6 +2,13 @@
 _Projetos em Javascript #1_
  
 
+### :open_file_folder: 15 - Carregando o próximo projeto: [CRUD]!
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/112887006/232644256-263cdeb2-6321-449a-841a-40e912ae7ac7.gif" />
+</p>
+
+
 ### :open_file_folder: 07 - Validador de quantidade de caracteres`<textarea maxlength="20"></textarea>`
 
 
