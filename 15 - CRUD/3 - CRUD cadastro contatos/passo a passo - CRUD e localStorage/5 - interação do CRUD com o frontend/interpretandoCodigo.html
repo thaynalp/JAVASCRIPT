@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+
+    <h2>
+        Passo 5 - integrando o CRUD ao Frontend
+    </h2>
+    
+<h2>Fluxo do código:</h2>
+<ol>
+    <p>
+        obs: não usaremos mais o objeto 'tempClient', <br>
+        pois os dados dos usuários vão chegar diretamente pelo form, <br>
+        pela função saveClient
+    </p>
+    <li>criar a função saveClient</li>
+    <li>função isValidFields<li>
+    <li>
+        chamar a função createClient(client) <br>
+        essa função envia e recebe dados dos clientes para o localStorage
+    </li>
+    <li>Chamar a função closeModal</li>
+    <li>Criar a função clearFields</li>
+</ol>
+
+<hr>
+
+
+<h3>
+    Fluxo do código e
+    Interpretando: <br>
+</h3>
+<ol>
+    <h4>função saveClient</h4>
+    <li>vai validar primeiro os campos de input, com if/else, para obrigar o usuário a preencher todos os inputs</li>
+    <li>vai receber um objeto 'client' com todos os dados, capturando os valores que vão ser recebidos pelo input</li>
+    <li>vai chamar cada função necessária para salvar um cliente a partir dos inputs, no localStorage</li>
+    <li>1º chamar as função: createClient(client), com parâmetro client que vai chegar do objeto 'client'</li>
+    <li>depois chamar a função updateTable(), que renderiza os contatos na tela</li>
+    <li>depois a função closeModal().</li>
+</ol>
+
+<ol>
+    <h4>função isValidFields</h4>
+    <li>
+        pega o form do HTML e verifica se todos os campos estão sendo preenchidos pelo usuário,
+        através do método reportValidity()
+
+    </li>
+    <li>
+        reportValidity() - esta função retorna verdadeiro quando todos os requisitos HTML foram atendidos</li>
+    <li>
+        'required' proprieda que permite fazer a chamda de validação dos campos de input direto no HTML <br>
+        ele retorna uma mensagem ao usuário de 'preencha este campo'
+    </li>
+</ol>
+
+<ol>
+    <h4>Função Close modal</h4>
+    <li> 
+        esta função fecha o modal quando o 'X' é clicado, <br>
+        através da propriedade classList.remove('active') <br>
+        ao clicar no botão de 'salvar', vai acionar a função closeModal, <br>
+        que vai acionar a função 'clearFields', vai limpar todos os campos de input <br>
+        e depois vai fechar o modal, tudo simultaneamente 
+    </li>
+</ol>
+
+<ol>
+    <h4>função clearFields </h4>
+    <li>    
+       querySelectorAll <br>
+       vai retornar um array com todos os elementos que ele achar, que foram passados como parâmetro
+       como ele vai retornar um array, podemos usar métodos de array 
+    </li>
+    <li> método de array: forEach <br>
+
+        - forEach(field => field.value = '') - interpretando o código <br>
+        forEach vai passar por cada elemento de 'field', vai pegar o valor desses elementos <br>
+        e vai atribuir a eles um valor vazio
+     </li>
+</ol>
+
+<ol>
+    <h4>função updateTable </h4>
+    <p>
+        função updateTable para renderizar na tela <br>
+        para quando salvar os dados, atualizar na tabela <br>
+        colocar essa função dentro da função saveClient
+    </p>
+    <li>
+        vai ler os dados do localStorage com a função 'readClient', <br>
+        que vai trazer um array, e nesse array tem elementos que são 'objetos'
+    </li>
+    <li>
+        com forEach ele vai percorrer cada dado do localStorage <br>
+        vai enviar pra função createRow, cliente por cliente
+    </li>
+    <li>
+
+    </li>
+</ol>
+
+<ol>
+    <h4>função createRow</h4>
+    <p>é onde será inserido elementos HTML dinamicamente</p>
+    <li>
+        será criado uma tag 'tr' (nova linha vazia) <br>
+        e vai ser inserido dentro das linhas da tabela os dados dos clientes, <br>
+        pelo template string `` 
+    </li>
+    <li>esses dados vão chegar pelo parâmetro 'client'</li>
+    <li> serão inseridas tag td (linhas) no HTML com o appendChild(newRow)</li>
+</ol>
+
+<ol>
+    <h4>tratando erros da função update</h4>
+
+    <li>toda vez que o update for executado, ele vai duplicar os dados e reincerir na tabela</li>
+    <li>para tratar esse erro, toda vez que der um update antes de preencher as linhas</li>
+    <li>vamos então limpar a tabela com a função clearTable</li>
+</ol>
+   
+<ol>
+    <h4>função clearTable</h4>
+    <li>querySelectorAll('#tableClient >tbody tr') >>> para pegar as 'tr' (as linhas da tabela)</li>
+    <li></li>
+
+</ol>
+
+<hr>
+<h>Conceitos utilizados:</h3>
+
+<ul>
+<li></li>
+<li>reportValidity()</li>
+<li>required - no HTML</li>
+<li>diferença entre Objeto e JSON</li>
+<li>classList.remove('active') </li>
+<li>querySelectorAll - que retorna uma array like. (que é diferente de um array completo)</li>
+<li>forEach()</li>
+<li>organização de funções </li>
+<li>localStorage</li>
+<li>localStorage.getItem</li>
+<li>localStorage.setItem</li>
+<li>JSON.parse</li>
+<li>JSON.stringify</li>
+</ul>
+
+
+<h4>reportValidity()</h4>
+<p>
+    O HTMLFormElement.reportValidity()método retorna true  <br>
+    se os controles filho do elemento satisfizerem suas restrições de validação.
+</p>
+
+<h4>required - atributo do HTML</h4>
+<p>
+    Serve para deixar o campo do formulário obrigatório <br>
+    fazer validação de campos sem o uso de JavaScript <br>
+    <input name="nome" required> <br>
+
+    Uma mensagem é informada ao usuário em uma tentativa de envio de formulário <br>
+    sem o preenchimento de um campo com required. <br>
+</p>
+
+<h4>diferença entre Objeto e JSON</h4>
+<a href="https://www.alura.com.br/artigos/json-e-objeto-javascript-sao-a-mesma-coisa">Obejto X JSON</a>
+<p>
+    Um JSON é um formato de transferência de dados <br>
+    muito usado em chamadas AJAX entre o navegador e um servidor. <br>
+    Você está interessado nos dados, apenas nos dados...
+</p>
+
+<h4>Um JSON tem algumas restrições:</h4>
+<li>
+    não pode ter funções
+</li>
+<li> não pode ter comentários</li>
+<li>
+    todo texto sempre tem aspas duplas
+</li>
+<li>as propriedades sempre tem aspas duplas</li>
+
+<code>
+    isso é um JSON
+    {
+        "nome":"Ananias",
+        "idade":20,
+        "endereco": {
+            "rua":"Vergueiro",
+            "cidade":"São Paulo"
+        },
+        "telefones": ["91234-5678", "98765-4321"]
+    }
+</code>
+
+<code>
+isso é um OBJETO
+
+    { 
+        nome: 'Ananias', 
+        idade: 20, 
+        endereco: { 
+            rua: "Vergueiro", 
+            cidade: "São Paulo"
+            }, 
+        telefones: ["91234-5678", '98765-4321'],
+        "calcula-ano-nascimento": function(){ 
+            //obtem ano atual 
+            var anoAtual = new Date().getFullYear();
+             return anoAtual - this.idade; 
+        } 
+    }
+</code>
+
+
+<h4>JSON.stringfy e parse.JSON</h4>
+
+<li>JSON.stringify(obejtoAqui); // Transforma o objeto literal em JSON.</li>
+<li>JSON.parse(JSONaqui); // Transforma o JSON em objeto literal.</li>
+
+
+
+
+
+
+    <script src="script.js"></script>
+
+    <style>
+        body{
+            margin: 30px;
+        }
+    </style>
+</body>
+</html>

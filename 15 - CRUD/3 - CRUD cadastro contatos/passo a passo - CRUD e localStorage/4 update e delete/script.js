@@ -29,17 +29,3 @@ const createClient =(client)=>{
     dbClient.push(client)
     setLocalStorage(dbClient)
 }
-
-// a função readClient é a própria função getClient. 
-//não precisaria criar a função readClient, mas foi criada pela didática
-
-/*
-update vai pegar os dados do banco que está no localStorage, com readClient()
-e armazenar na variável 'dbClient', que é um array desse banco
-
-
- dbClient[index] = client >> o index é para saber qual cliente queremos editar
-                esse cliente que vai ser recebido, são os dados atualizados
-
-e enviamos pra o banco, com a função setLocalStorage
-*/

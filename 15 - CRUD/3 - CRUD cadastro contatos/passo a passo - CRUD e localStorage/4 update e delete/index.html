@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+
+    <h2>
+        Passo 4 - separando cada ação em uma função: <br> 
+         update, delete  
+    </h2>
+    
+<h2>Fluxo do código:</h2>
+<ol>
+    <li>criar a função readClient, para ler os dados que já estão no localStorage</li>
+    <li>criar a função updateClient. Permite atualizar os dados de um cliente</li>
+    <li>criar a função deleteClient. Para deletar clientes</li>
+</ol>
+
+<hr>
+
+
+<h3>Interpretando o código:</h3>
+<ol>
+    <h4>função readClient</h4>
+    <li>
+        const readClient =()=> getLocalStorage()
+        a função readClient é a própria função getClient. <br>
+        não precisaria criar a função readClient, mas foi criada pela didática <br>
+    </li>
+</ol>
+
+<ol>
+    <h4>fluxo do código - função updateClient</h4>
+    <li>
+        vai pegar os dados do banco que está no localStorage, com readClient() <br>
+        e armazenar na variável 'dbClient', que é um array desse banco
+    </li>
+    <li>
+        dbClient[index] = client
+        <p>
+            o index é para saber qual cliente queremos editar. <br>
+            esse cliente que vai ser recebido, são os dados atualizados <br>
+        </p>
+    </li>
+    <li>e enviamos pra o banco, com a função setLocalStorage</li>
+</ol>
+
+<ol>
+    <h4>fluxo do código - função delete</h4>
+    <li>primeiro ele vai pegar os dados que estão no localStorage, com a função readClient e armazenar a variável dbClient</li>
+    <li>dbClient sendo um array retornado de readClient, vamos add o método splice()</li>
+    <li>splice(), vai achar pelo índex o item que queremos exluir e vai executar a função</li>
+    <li>setLocalStorage vai enviar de volta os dados, através do parâmetro dbClient para o localStorage</li>
+</ol>
+   
+<h4>Métodos utilizados:</h4>
+
+<ol>
+    <li>Array.splice(index, removeCount, novoItem, novoItem, novoItem, ...)</li>
+
+    <p>
+        O método splice() é usado principalmente quando você precisa excluir <br>
+        ou adicionar novos elementos a um array. <br>
+        Em algumas situações, você também pode usá-lo para separar um array que tenha conteúdo misto
+    </p>
+    <p>
+        let meses = ["Janeiro", "Fevereiro", "Segunda", "Terça"]; <br>
+        let dias = meses.splice(2); <br>
+        
+        console.log(dias); // ["Segunda", "Terça"]</p>
+    <p>
+        O método splice() precisa de pelo menos um parâmetro,  <br>
+        que é o índice de início, onde a operação de fatiamento (splice, em inglês) começa. <br>
+        No código acima, o número 2 é passado para o método, <br>
+        o que significa que o splice() começará a remover elementos a partir do índice 2. 
+    </p>
+
+    <p>
+
+        let meses = ["Janeiro", "Fevereiro", "Segunda", "Terça"]; <br>
+        let dias = meses.splice(2, 1); <br>
+
+        console.log(dias); // ["Segunda"] <br>
+        console.log(meses); // ["Janeiro", "Fevereiro", "Terça"]
+    </p>
+
+    <a href="https://www.freecodecamp.org/portuguese/news/splice-em-javascript-como-usar-o-metodo-de-array-splice-em-js/">mais sobre splice()</a>
+</ol>
+
+
+    <script src="script.js"></script>
+
+    <style>
+        body{
+            margin: 30px;
+        }
+    </style>
+</body>
+</html>

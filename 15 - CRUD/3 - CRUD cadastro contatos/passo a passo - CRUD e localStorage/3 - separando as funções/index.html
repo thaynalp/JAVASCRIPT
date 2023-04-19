@@ -9,16 +9,23 @@
 <body>
 
     <h2>
-        Passo 3: Enviar dados pro local storage. <br> 
-        separando cada ação em uma função    
+        Passo 3: Enviar dados pro local storage.  
     </h2>
     
 <h2>Fluxo do código:</h2>
 <ol>
-    <li>criar uma função separada para levar os dados pro localStorage</li>
-    <li>criar uma separada para trazer os dados do localStorage</li>
+    <li>criar uma função separada para levar e trazer os dados pro localStorage</li>
     <li>chamar essas funções de levar e trazer dados dentro da função createClient</li>
+    <li>getLocalStorage vai pegar os dados no localStorage e retornar para a variável 'dbClient', que está dentro da função createClient</li>
+    <li>a variável 'dbClient', que está recebendo um array, vai enviar dados do 'client' pelo 'push'. Esses dados estão vindo direto do 'objeto' 'tempClient'</li>
+    <li>a função setLocalStorage vai receber por parâmetro 'dbClient'. O valor lançado para o localStorage será o valor recebido por 'dbClient'</li>
+    <li>e a função 'createClient' vai receber o parâmetro 'client', que são dados que esão vindo do objeto 'tempClient'</li>
+    <li>e essa função vai receber a função 'setLocalStorage', que vai enviar dados do 'dbClient'</li>
 </ol>
+
+obs: 'dbClient' é uma variável que está recebendo dados do array que está no localStorage
+e está sendo enviado dados também, pela função 'setLocalStorage(dbClient)
+
 
 <hr>
 
@@ -29,12 +36,11 @@
     <li></li>
 </ol>
 
-<h2>Interpretando o código:</h2>
+<h2>Explicando o código:</h2>
 <ol>
-    <li></li>
-    <li></li>
+
 </ol>
-   
+
     <h3>Método ...</h3>
 
 
