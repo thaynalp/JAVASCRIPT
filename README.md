@@ -2,6 +2,13 @@
 _Projetos em Javascript #1_
  
 
+### :open_file_folder: :question:	 - Carregando o próximo projeto...
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/112887006/232645199-fef7e43e-e29e-486d-885a-b8eebdc9f0ef.png" />
+</p>
+
+
 ### :open_file_folder: 07 - Validador de quantidade de caracteres`<textarea maxlength="20"></textarea>`
 
 
@@ -30,7 +37,7 @@ _Projetos em Javascript #1_
 ## <div align="center"> :link: <a href="https://github.com/thaynalp/Contador-em-JS" target="_blank">código do projeto</a></div>
 ## <div align="center"> :link: <a href="https://thaynalp.github.io/Contador-em-JS/" target="_blank">Interaja aqui: contador</a></div>
 
-<div align="center"> <img  height="200" alt="coding-time" src="https://user-images.githubusercontent.com/112887006/228672489-db7af0a0-bc5d-4636-b7bb-73f47e2d8f87.png"></div>
+<div align="center"> <img  height="200" alt="coding-time" src="https://user-images.githubusercontent.com/112887006/232643236-550a5078-ded3-4188-b958-156ca933bbf2.png"></div>
 
 
 ### :open_file_folder: 05 - Gerador de cores hexadecimal com `<input type="color">`
