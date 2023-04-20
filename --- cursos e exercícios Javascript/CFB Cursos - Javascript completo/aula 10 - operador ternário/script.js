@@ -1,18 +1,25 @@
 let num=10
 
-res=(num%2 ? 'ímpar':'par')
+res=(!(num%2) ? 'par':'ímpar')
 console.log(res)
 //não vai dar o resultado correto, que é 'par'
 // o resto da divisão por 2 é zero.
 
+//0=false
+//1=false
 
-// A operação ternária tem uma síntaxe que é seguinte:
-// 0= false
-// 1= true
+//o resultado do resto da divisão de 10/2 é zero, portanto é 'par'
+//mas zero no js é false. E aí cai na condição do false, que é 'ímpar'
+//para consertar isso, negamos a condição, usando ponto de exclamação
+// o que for true vira false e vice-versa
+// !(num%2) >> !(true) mas por causa da negativa, vira false
 
-//ou seja, quando deu zero no resto da divisão, ele caiu na condição false
-// para fazer isso funcionar temos que negar a operação, com um ponto de exclamação
-//
+
+//síntaxe:
+// condition ? true : false
+//Uma expressão que é avaliada como true ou false.
+
+
 
 
 

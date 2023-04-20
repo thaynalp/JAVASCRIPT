@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Operador ternário</h3>
+    <h3>síntaxe - condition ? true : false</h3>
+
+    <p>é uma forma simples de fazer verificação de true ou false</p>
+    <button>Fazer uma requisição</button>
+</body>
+
+
+<a href="https://www.youtube.com/watch?v=M-VZ2g_M094">youtube, explicação</a>
+
+<script>
+document.querySelector('button').addEventListener('click',ternaryOperator)
+
+/*
+podemos utilizar para verificação
+atribuição - colocando a operação numa variável
+funções = para verificar funções e executar
+retorno da função
+*/
+
+function success(){
+    return 'Atualizado com sucesso'
+}
+
+function error(){
+    return 'Erro ao atualizar'
+}
+
+function ternaryOperator (){
+    const status = 400 // imagine que essa requisição está vindo de uma api
+    const msg = status === 200 ? success() : error()
+    alert(msg)
+}   
+
+
+
+// function ternaryOperator (){
+//     const status = 400 // imagine que essa requisição está vindo de uma api
+//     const msg = status === 200 ? success() : error()
+// }    
+
+
+
+// function ternaryOperator (){
+//     const status = 200 // imagine que essa requisição está vindo de uma api
+//     const msg = status === 200 ? 'Atualizado com sucesso' : 'Erro ao atualizar'
+//     alert(msg)
+// }    
+
+    
+    
+    // function ternaryOperator (){
+    //     const status = 200 // imagine que essa requisição está vindo de uma api
+    //     alert(status === 200 ? 'Atualizado com sucesso' : 'Erro ao atualizar')
+    // }
+
+    // if(status === 200){
+        //     alert('Atualizado com sucesso')
+        // }else{
+        //     alert('Erro ao atualizar')
+        // }
+</script>
+</html>

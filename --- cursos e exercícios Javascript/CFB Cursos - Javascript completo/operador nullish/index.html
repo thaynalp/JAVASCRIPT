@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>nullish Coalescing operator</h1>
+    <h2>valor falsy:</h2>
+<br>    if (false)
+<br>    if (null)
+<br>    if (undefined)
+<br>    if (0)
+<br>    if (NaN)
+<br>    if ('')
+<br>    if (document.all) [1]
+</body>
+
+<a href="https://www.youtube.com/watch?v=QOVwoD5DOEg">youtube, explicação</a>
+<script>
+    console.log( null || 'alguma coisa')
+    console.log(undefined ?? 'alguma coisa')
+
+    // ?? esses dois pontos de interrogação é o nullish operator
+    //ele funciona parecido com o operador (or ||)
+
+
+    //se tiver um valor falsy ele será considerado erro
+    //e vai executar o outro valor do lado direito
+    // operador (or ||), se tiver apenas uma valor que satisfaça a condição true
+    // ele é executado, sem executar os próximos 
+
+</script>
+</html>
