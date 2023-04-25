@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label>Nome</label>
+        <input id="nome" type="text" placeholder="nome">
+
+        <label>Email</label>
+        <input id="email" type="email">
+
+        <button id="enviar">Enviar</button>
+    </form>
+
+    <script>
+        // const tempClient = {
+        //     nome: "Rodrigo",
+        //     email: "rodrigo@gmail.com",
+        //     cidade: "São Paulo"
+        // }
+
+        
+        const saveClient =()=>{
+            const inputClient = {
+                nome: document.getElementById('nome').value,
+                email: document.getElementById('email').value
+            }
+            createClient(inputClient)
+        }
+
+
+        const createClient =(client)=>{
+           const dbClient = JSON.parse(localStorage.getItem('db_client')) ?? [] 
+           dbClient.push(client) 
+           localStorage.setItem('db_client',JSON.stringify(dbClient))
+        }
+
+       
+        const enviar = document.getElementById('enviar')
+            .addEventListener('click',saveClient)
+        </script>
+</body>
+</html>

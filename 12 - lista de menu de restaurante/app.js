@@ -90,7 +90,6 @@ window.addEventListener('DOMContentLoaded', function(){
     displayMenuItems(menu)
     const categories = menu.reduce
     console.log(categories)
-    
 })
 
 //filter items
@@ -111,9 +110,6 @@ filterBtns.forEach(function(btn){
        }
     })
 })
-
-
-
 
   function displayMenuItems(menuItems){
     let displayMenu = menuItems.map(function(item){

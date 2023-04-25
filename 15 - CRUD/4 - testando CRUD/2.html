@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <h3>
+         pegar o valor de um input e armazenar no array <br>
+            inserindo dados em um array
+     </h3>
+    
+    <input type="text" />
+    <button id="exemplo">Salvar</button>
+    <div></div>
+
+    <script>
+        
+    var input = document.querySelector("input")
+    var button = document.querySelector("button")
+    const div = document.querySelector("div")
+
+    button.onclick = function () {
+        var array = [];
+        array.push(input.value);
+        // console.log(array.map(item=>item));
+
+        array.map(item=>{
+            div.innerHTML=item
+            // div.innerHTML = array.map(item=>`<p>${item}</p>`).join('')
+        })
+
+        
+    }
+
+
+
+
+    // button.onclick = function () {
+    //     var array = [];
+    //     array.push(input.value);
+    //     console.log(array.map(item=>`<p>${item}</p>`));
+
+    //    div.innerHTML = array.map(item=>`<p>${item}</p>`)
+        
+    // }
+    </script>
+</body>
+</html>
