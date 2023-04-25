@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="treinando4.css">
+</head>
+<body>
+    <header>
+        <h1 class="header-title">Cadastro de Clientes</h1>
+    </header>
+    <main>
+        <button class="button cadastrar" id="cadastrarCliente">Cadastrar Cliente</button>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                    <th>Celular</th>
+                    <th>Cidade</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Maria</td>
+                    <td>maria@gmail.com</td>
+                    <td>(11) 97156 5685</td>
+                    <td>São Paulo</td>
+                    <td>
+                        <button>Editar</button>
+                        <button>Excluir</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>João</td>
+                    <td>joao@gmail.com</td>
+                    <td>(21) 98312 5014</td>
+                    <td>Niterói</td>
+                    <td>
+                        <button>Editar</button>
+                        <button>Excluir</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="modal">
+            <div class="modal-content">
+                <header class="modal-header">
+                    <h2>Novo Cliente</h2>
+                    <span class="modal-close">&#10006</span>
+                </header>
+                <form class="modal-form">
+                    <input type="text" class="modal-field" placeholder="nome">
+                    <input type="email" class="modal-field" placeholder="email">
+                    <input type="text" class="modal-field" placeholder="celular">
+                    <input type="text" class="modal-field" placeholder="Cidade">
+                </form>
+                <footer class="modal-footer">
+                    <button class="button salvar">Salvar</button>
+                    <button class="button cancelar">Cancelar</button>
+                </footer>
+            </div>
+        </div>
+    </main>
+
+    <!--
+    tr - linha da tabela
+    th - coluna da tabela 
+    td - conteúdo da linha
+    -->
+
+</body>
+    <script>
+        const tempClient = {
+            nome: "Rodrigo",
+            email: "rodrigo@gmail.com",
+            cidade: "São Paulo"
+        }
+        const getLocalStorage =()=> JSON.parse(localStorage.getItem('db_client')) ?? []
+        const setLocalStorage =(dbClient)=>  localStorage.setItem('db_client',JSON.stringify(dbClient))
+
+        const createClient =(client)=>{
+            const dbClient = getLocalStorage()
+            dbClient.push(client)
+            setLocalStorage(dbClient)
+        }
+
+        const readClient =()=> getLocalStorage()
+
+        const updateClient =(index,client)=>{
+            const dbClient = readClient()
+            dbClient[index] = client
+            setLocalStorage(dbClient)
+        }
+
+        const deleteClient =(index)=>{
+            const dbClient = readClient()
+            dbClient.splice(index,1)
+            setLocalStorage(dbClient)
+        }
+
+    //integração com o frontend
+
+    const openModal =()=> document.getElementById('modal')
+    .classList.add('active')
+    
+
+    document.getElementById('cadastrarCliente')
+    .addEventListener('click',openModal)
+    </script>
+</html>

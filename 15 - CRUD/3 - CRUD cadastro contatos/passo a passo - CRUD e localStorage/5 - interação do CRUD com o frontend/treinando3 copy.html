@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,11 +18,11 @@
     </form>
 
     <script>
-        // const tempClient = {
-        //     nome: "Rodrigo",
-        //     email: "rodrigo@gmail.com",
-        //     cidade: "São Paulo"
-        // }
+        const tempClient = {
+            nome: "Rodrigo",
+            email: "rodrigo@gmail.com",
+            cidade: "São Paulo"
+        }
 
         
         const saveClient =()=>{
@@ -44,14 +44,17 @@
 
         const readClient =()=> getLocalStorage()
 
-        const updateClient=(index,client)=>{
-            const dbClient = getLocalStorage()
-            dbClient[index] = client
-            setLocalStorage(client)
-        }
+        // const updateClient=(index,client)=>{
+        //     const dbClient = readClient()
+        //     dbClient[index] = client
+        //     setLocalStorage(client)
+        // }
 
-
-        
+        // const deleteClient = (index)=>{
+        //     dbClient = readClient()
+        //     dbClient.splice(index,1)
+        //     setLocalStorage(dbClient)
+        // } 
         
 
         const enviar = document.getElementById('enviar')
