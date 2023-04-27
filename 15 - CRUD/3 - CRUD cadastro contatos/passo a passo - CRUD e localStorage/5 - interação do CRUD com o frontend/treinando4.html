@@ -52,7 +52,7 @@
             <div class="modal-content">
                 <header class="modal-header">
                     <h2>Novo Cliente</h2>
-                    <span class="modal-close">&#10006</span>
+                    <span class="modal-close" id="modalClose">&#10006</span>
                 </header>
                 <form class="modal-form">
                     <input type="text" class="modal-field" placeholder="nome">
@@ -107,10 +107,17 @@
     //integração com o frontend
 
     const openModal =()=> document.getElementById('modal')
-    .classList.add('active')
+        .classList.add('active')
     
+    const closeModal = () => {
+        document.getElementById('modal').classList.remove('active')
+    }
+
 
     document.getElementById('cadastrarCliente')
-    .addEventListener('click',openModal)
+        .addEventListener('click',openModal)
+
+    document.getElementById('modalClose')
+        .addEventListener('click', closeModal)
     </script>
 </html>
